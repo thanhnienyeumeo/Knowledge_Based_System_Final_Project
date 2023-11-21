@@ -1,0 +1,131 @@
+{"intents": [
+    {
+        "tag": "Khái niệm",
+        "patterns": [
+            "Giải là gì", 
+            "Một số thông tin về giải đấu", 
+            "Giải đấu là gì", 
+            "Giải đấu tennis", 
+            "Các giải đấu tennis",
+            "Ý nghĩa giải đấu",
+            "Định nghĩa giải đấu",
+            "Các thông tin giải"
+            ]
+     
+    },
+        {
+            "tag": "Thời gian thi đấu",
+            "patterns": [
+                "Thời gian diễn ra giải đấu",
+                "Lịch trình thi đấu",
+                "Khi nào diễn ra giải",
+                "Lịch trình giải đấu",
+                "Lịch trình giải",
+                "Thời gian thi đấu của giải",
+                "Thời gian giải"
+            ]
+        },
+        {
+            "tag": "Cơ cấu giải thưởng",
+            "patterns": [
+                "Giải thưởng của giải đấu",
+                "Tổng giải thưởng",
+                "Phần thưởng cho người chiến thắng",
+                "Phần thưởng cho những tay vợt hàng đầu",
+                "Cơ cấu giải thưởng của giải",
+                "Phần thưởng của giải",
+                "Vô địch giải được nhận bao nhiêu tiền",
+                "Số tiền của nhà vô địch",
+                "Tiền thưởng của giải",
+                "Số tiền thưởng của giải đấu",
+                "Nhà vô địch có số tiền thưởng là bao nhiêu"
+            ]
+        },
+        {
+            "tag": "Địa điểm tổ chức",
+            "patterns": [
+                "Nơi tổ chức giải",
+                "Địa điểm diễn ra giải",
+                "Sân thi đấu được chọn ở đâu?",
+                "Giải được tổ chức tại quốc gia nào?",
+                "Giải đấu diễn ra tại đâu?",
+                "Địa điểm tổ chức giải",
+                "Quốc gia nào đăng cai giải",
+                "Quốc gia nào tổ chức giải",
+                "Nơi diễn ra giải đấu",
+                "Giải đấu được diễn ra ở đâu",
+                "Tên quốc gia nào tổ chức giải đấu"
+            ]
+        },
+        {
+            "tag": "Thể thức thi đấu",
+            "patterns": [
+                "Thể thức thi đấu của giải",
+                "Cách thi đấu trong giải",
+                "Hình thức của giải đấu",
+                "Luật lệ thi đấu của giải đấu",
+                "Số set thi đấu trong trận đấu của giải",
+                "Thông tin các vòng đấu của giải",
+                "Các vòng đấu của giải",
+                "Giải đấu tổ chức với thể thức và cách thi đấu nào",
+                "Giải đấu tổ chức với thể thức và luật lệ nào",
+            ]
+        },
+        {
+            "tag": "Lịch sử của giải",
+            "patterns": [
+                "Những thông tin về lịch sử của giải",
+                "Các thông tin về lịch sử",
+                "Những kỷ niệm trong quá khứ của giải",
+                "Lịch sử giải đấu",
+                "Những kỷ niệm của giải",
+                "Những kỷ niệm đáng nhớ của giải",
+                "Quá trình hình thành của giải",
+                "Quá trình và lịch sử giải đấu"
+            ]
+        }
+    
+],
+
+"ATP Finals": [
+    {"tag": "Khái niệm",
+     "responses": ["Chơi tennis rất dễ"]
+    },
+    {"tag": "Thời gian",
+     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
+     "responses": ["Điểm thì tự đi mà tính "]
+    }
+],
+"Australian Open": [
+    {"tag": "Khái niệm",
+     "responses": ["Chơi tennis rất dễ"]
+    },
+    {"tag": "Thời gian",
+     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
+     "responses": ["Điểm thì tự đi mà tính "]
+    }
+],
+"Davis Cup":
+[
+    {"tag": "Khái niệm",
+     "responses": ["Chơi tennis rất dễ"]
+    },
+    {"tag": "Thời gian",
+     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
+     "responses": ["Điểm thì tự đi mà tính "]
+    }
+],
+"Unknown":
+[
+    {"tag": "Khái niệm",
+     "responses": ["Chơi tennis rất dễ"]
+    },
+    {"tag": "Thời gian",
+     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
+     "responses": ["Điểm thì tự đi mà tính "]
+    }
+],
+
+
+"tag": "Thông tin về các giải đấu tennis"
+}

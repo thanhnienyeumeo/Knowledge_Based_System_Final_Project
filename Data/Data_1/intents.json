@@ -1,0 +1,151 @@
+{"intents": [
+    {"tag": "Luật chơi Tennis",
+     "patterns": ["cách chơi tennis", "cách chơi tennis", "luật chơi tennis", "luật chơi tennis", "luật chơi chung"],
+     "responses": ["Chơi tennis rất dễ"]
+    },
+    {"tag": "Tennis là gì",
+     "patterns": ["giải thích về tennis", "Tennis là gì", "Môn thể thao tennis", "giải thích về tennis", "tennis là gì"],
+     "responses": []
+    },
+    {"tag": "Lịch sử tennis",
+     "patterns": ["Lịch sử của môn tennis", "nguồn gốc của tennis", "nguồn gốc của tennis", "Lịch sử tennis", "lịch sử phát triển", "năm ra đời", "ra đời từ khi nào"],
+     "responses": []
+    },
+    {"tag": "Các thiết bị trong tennis",
+     "patterns": ["Cần những thiết bị gì", 
+                "Các dụng cụ cần có khi tham gia", 
+                "Các trang bị chính", 
+                "các thiết bị chính khi chơi tennis",
+                "Các thiết bị chính khi chơi tennis"],
+     "responses": []
+    },
+    {"tag": "trình tự giao bóng trong tennis",
+     "patterns": ["quy tắc cụ thể về trình tự giao bóng",
+                    "trình tự giao bóng",
+                "trình tự giao bóng trong tennis",
+                "trình tự giao bóng trong tennis",
+                "thứ tự giao bóng",
+                "thứ tự giao bóng trong tennis",
+                "thứ tự giao bóng trong tennis"],
+
+     "responses": []
+    },
+    {"tag": "Luật giao bóng lại",
+     "patterns": ["Quy định về giao bóng lại",
+                "Luật giao bóng lại",
+                "Luật giao bóng lại trong tennis",
+                "Luật giao bóng lại trong tennis",
+                "số lần giao bóng lại",
+                "số lần giao bóng lại trong tennis",
+                "số lần giao bóng lại trong tennis"],
+     "responses": []
+    },
+    {"tag": "luật khiếu nại",
+     "patterns": ["Làm thế nào để khiếu nại trong tennis?",
+     "Luật khiếu nại  trong tennis?",
+     "Khi nào được khiếu nại trong tennis?",
+     "Khiếu nại được áp dụng trong trường hợp nào",
+     "Có bao nhiêu lần khiếu nại thực hiện?",
+     "Cách khiếu nại trong tennis?",
+     "Cách khiếu nại đúng luật"],
+     "responses": []
+    },
+    {"tag": "Tác dụng của môn tennis",
+     "patterns": ["Tác dụng tích cực của việc chơi tennis là gì?",
+     "Chơi tennis có lợi ích gì cho sức khỏe?",
+     "Tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần?",
+     "Lợi ích của tennis",
+     "Lợi ích môn thể thao tennis",
+     "Tác dụng tích cực của việc chơi tennis là gì?",
+     "Chơi tennis có lợi ích gì cho sức khỏe?",
+     "tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần?"],
+
+     "responses": []
+    },
+    {"tag": "Những người không nên chơi tennis",
+     "patterns": ["Ai không nên tham gia vào môn tennis?",
+     "những đối tượng không nên chơi tennis không?",
+     "Tennis không phù hợp với ai?",
+     "Ai không nên chơi tennis"],
+     "responses": []
+    },
+    {"tag": "Giày",
+     "patterns": ["Tại sao giày tennis quan trọng trong môn thể thao này?",
+     "Giày tennis cần có điểm gì đặc biệt",
+     "Có gợi ý việc chọn giày tennis",
+     "Gợi ý chọn giày tennis",
+     "Tiêu chuẩn giày"],
+     "responses": []
+    },
+    {"tag": "các cơ quan trong tennis",
+     "patterns": ["Các tổ chức quản lý",
+                "Ai chịu trách nhiệm tổ chức các giải đấu tennis lớn?",
+                "Có những tổ chức nào quản lý tennis trên toàn thế giới?",
+                "Tổ chức lớn trong tennis",
+                "Các cơ quan chính trong tennis",
+                "Cơ quan lớn tổ chức"],
+     "responses": []
+    },
+    {"tag": "chấn thương hay gặp",
+     "patterns": ["Các loại chấn thương phổ biến trong tennis",
+     "Cách để tránh chấn thương khi chơi tennis",
+     "Những nguy cơ chấn thương  khi chơi tennis",
+    "chấn thương hay gặp trong tennis",
+    "loại chấn thương mắc phải"],
+     "responses": []
+    },
+    {"tag": "Điểm",
+     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis"],
+     "responses": ["Điểm thì tự đi mà tính "]
+    },
+    {"tag": "Vợt",
+     "patterns": [ "vợt tennis", "tiêu chuẩn vợt", "tiêu chuẩn vợt tennis"],
+     "responses": ["vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ. Mặt vợt được căng bằng dây ni lông hoặc dây ruột bò. Ngày nay có nhiều loại dây mới gọi là dây nilông tổng hợp."]
+    },
+    {"tag": "bóng",
+     "patterns": ["bóng tennis", "tiêu chuẩn bóng tennis", "bóng tennis"],
+     "responses": ["Bóng cười"]
+    },
+    {"tag": "Luật chơi Tennis ở Anh",
+     "patterns": ["luật tennis nước anh", "luật tại anh", "luật chơi tennis ở anh"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "Sân",
+     "patterns": ["tiêu chuẩn sân thi đấu", "sân tennis chuẩn", "tiêu chuẩn sân thi đấu tennis", "sân thi đấu tennis"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "Giao bóng",
+     "patterns": ["cách giao bóng hợp lệ", "giao bóng", "luật giao bóng tennis", "luật giao bóng tennis"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "lỗi giao bóng",
+     "patterns": ["giao bóng không hợp lệ", "lỗi giao bóng", "lỗi giao bóng tennis",  "lỗi giao bóng tennis"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "tie-break",
+     "patterns": ["luật tie-break tennis", "luật tie-break tennis"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "luật đánh đơn",
+     "patterns": ["luật đánh đơn tennis", "luật đánh đơn tennis"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "luật đánh đôi",
+     "patterns": ["luật đánh đôi tennis", "luật đánh đôi tennis"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "vạch biên",
+     "patterns": ["vạch biên tennis", "vạch biên tennis", "ý nghĩa vạch biên", "vạch biên để làm gì"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "lưới",
+     "patterns": ["lưới tennis", "lưới tennis", "tiêu chuẩn lưới", "ý nghĩa lưới", "lưới để làm gì"],
+     "responses": ["Luật Tennis tại Anh"]
+    },
+    {"tag": "trọng tài",
+     "patterns": ["trọng tài tennis", "trọng tài tennis", "quyết định trọng tài"],
+     "responses": ["Luật Tennis tại Anh"]
+    }
+],
+"tag": "Luật chơi và các thông tin cơ bản về tennis"
+}

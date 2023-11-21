@@ -1,0 +1,125 @@
+{   "intents":  [
+    {"tag": "Xếp hạng",
+     "patterns": ["Xếp hạng thế giới", 
+                    "Ranking", 
+                    "Điểm số thế giới xếp hạng",
+                "Danh sách xếp hạng",
+                "Top các tay vợt có xếp hạng cao nhất",
+                "Top các tay vợt có điểm số cao nhất",
+                "Các tay vợt có xếp hạng cao",
+                "Các tay vợt có điểm số cao",
+                "danh sách xếp hạng thế giới"]
+    },
+    {"tag": "Thông tin cá nhân",
+     "patterns": ["Thông tin cá nhân", 
+                    "Thông tin tuyển thủ", 
+                    "Thông tin chung vận động viên", 
+                    "Hồ sơ cá nhân", 
+                    "Thông tin cá nhân tay vợt", 
+                    "Thông tin chung của tay vợt",
+                    "Biết thêm về thông tin người chơi",
+                    "Biết thêm về thông tin tay vợt",
+                    "Tuyển thủ các thông tin cơ bản"]
+    },
+    {"tag": "Thành tích",
+     "patterns": ["Thành tích thi đấu của tuyển thủ",
+                "Các danh hiệu đã đạt được",
+                "Thành tích vận động viên",
+                "Thành tích thi đấu của tay vợt", 
+                "Các danh hiệu của tay vợt"]
+    },
+    {"tag": "Lịch thi đấu",
+     "patterns": [ "Lịch thi đấu mới nhất",
+                "Lịch thi đấu sắp tới",
+                    "Lịch trình thi đấu",
+                "Lịch thi đấu của tuyển thủ",
+                "Lịch đánh giải đấu của tay vợt",
+                "Lịch trình thi đấu sắp tới"]
+    },
+    {"tag": "Kết quả thi đấu",
+     "patterns": [ "Kết quả thi đấu mới nhất",
+     "Lịch thi đấu sắp tới",
+     "Lịch trình thi đấu",
+     "Kết quả thi đấu",
+    "Kết quả gần đây",
+    "Kết quả thi đấu gần đây"]
+
+    },
+    {
+        "tag": "Đánh giá chung",
+        "patterns": [
+            "Đánh giá về tuyển thủ",
+            "Nhận xét tổng quan",
+            "Thông tin đánh giá về vận động viên",
+            "Nhận xét chung cho tay vợt",
+            "Đánh giá chung về tay vợt",
+            "Nhận xét và đánh giá chung",
+            "Ý kiến đánh giá tổng thể"
+        ]
+    },
+    {
+        "tag": "Thông tin về các tuyển thủ nổi tiếng",
+        "patterns": [
+            "Thông tin về các tuyển thủ nổi tiếng",
+            "Thông tin về các tay vợt nổi tiếng",
+            "Thông tin về các tuyển thủ nổi tiếng thế giới",
+            "Thông tin về các tay vợt nổi tiếng thế giới",
+            "Thông tin về các tuyển thủ nổi tiếng thế giới"
+        ],
+        "responses":["Top 10 tay vợt nổi tiếng nhất thế giới hiện tại là: ...."]
+    },
+    {
+        "tag": "Thông tin về các tuyển thủ nổi tiếng ở Việt Nam",
+        "patterns": [
+            "Thông tin về các tuyển thủ nổi tiếng tại Việt Nam",
+            "Thông tin về các tay vợt nổi tiếng tại Việt Nam",
+            "Các tuyển thủ hàng đầu Việt Nam",
+            "Các tay vợt hàng đầu Việt Nam",
+            "Những tay vợt top đầu ở Việt Nam"
+        ],
+        "responses":["Top 10 tay vợt nổi tiếng nhất Việt Nam hiện tại là: ...."]
+    }
+],
+    
+    "Rafael Nadal": [
+    {"tag": "Xếp hạng",
+     "responses": ["Hiện tại theo bảng xếp hạng ATP Nadal đang đứng thứ 663 thế giới. Anh từng đạt xếp hạng cao nhất là top 1 thế giới"]
+    },
+    {"tag": "Thông tin cá nhân",
+     "responses": ["Điểm thì tự đi mà tính "]
+    },
+    {"tag": "Thành tích",
+     "responses": ["vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ. Mặt vợt được căng bằng dây ni lông hoặc dây ruột bò. Ngày nay có nhiều loại dây mới gọi là dây nilông tổng hợp."]
+    },
+    {"tag": "Lịch thi đấu",
+     "responses": ["Bóng cười"]
+    },
+    {"tag": "Kết quả thi đấu",
+     "responses": ["Bóng cười"]
+    },
+    {"tag": "Đánh giá chung",
+     "responses": ["Bóng cười"]
+    }
+],
+    "Unknown": [
+        {"tag": "Xếp hạng",
+         "responses": ["Hiện tại theo bảng xếp hạng ATP Nadal đang đứng thứ 663 thế giới. Anh từng đạt xếp hạng cao nhất là top 1 thế giới"]
+        },
+        {"tag": "Thông tin cá nhân",
+         "responses": ["Điểm thì tự đi mà tính "]
+        },
+        {"tag": "Thành tích",
+         "responses": ["vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ. Mặt vợt được căng bằng dây ni lông hoặc dây ruột bò. Ngày nay có nhiều loại dây mới gọi là dây nilông tổng hợp."]
+        },
+        {"tag": "Lịch thi đấu",
+         "responses": ["Bóng cười"]
+        },
+        {"tag": "Kết quả thi đấu",
+        "responses": ["Bóng cười"]
+        },
+        {"tag": "Đánh giá chung",
+         "responses": ["Bóng cười"]
+         }
+],
+"tag": "Thông tin về các tuyển thủ nổi tiếng"
+}

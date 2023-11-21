@@ -1,0 +1,20 @@
+{"intents": [
+    {"tag": "Lịch thi đấu",
+     "patterns": ["cách chơi tennis", "cách chơi quần vợt", "luật chơi quần vợt", "luật chơi tennis", "luật chơi chung"],
+     "responses": ["Chơi tennis rất dễ"],
+     "_comment": "using api insted"
+    },
+    {"tag": "Kết quả thi đấu",
+     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số quần vợt"],
+     "responses": ["Điểm thì tự đi mà tính "],
+     "_comment": "using api insted"
+    },
+    {"tag": "Tin tức mới nhất",
+     "patterns": ["Những tin tức mới nhất về quần vợt", "điểm số", "điểm số tennis", "điểm số quần vợt"],
+     "responses": ["Điểm thì tự đi mà tính "],
+     "_comment":"using api insted"
+    }
+],
+
+"tag": "Các tin tức mới nhất liên quan đến tennis"
+}

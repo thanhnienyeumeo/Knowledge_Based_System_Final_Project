@@ -1,0 +1,129 @@
+{"intents": [
+    
+    {"tag": "Chiến thuật trong tennis",
+     "patterns": ["cách chơi tennis",
+                 "cách chơi tennis",
+                 "Các chiến thuật trong tennis"],
+     "responses": ["Chơi tennis rất dễ"]
+    },
+    {"tag": "Cách di chuyển chân",
+     "patterns": ["di chuyển chân hiệu quả", 
+     "di chuyển chân hiệu quả trong tennis", 
+     "di chuyển chân hiệu quả trong tennis",
+     "di chuyển chân đúng cách",
+     "di chuyển chân đúng cách trong tennis",
+     "di chuyển chân đúng cách trong tennis"],
+     "responses": []
+    },
+    {"tag": "Cách đánh bóng trong tennis",
+     "patterns": ["Kĩ thuật đánh bóng",
+     "Đánh bóng như thế nào", 
+     "Đánh bóng đúng cách", 
+     "Tiếp xúc bóng đúng cách", 
+     "Điều khiển hướng đi của bóng tennis",
+     "Làm sao để phát bóng tốt",
+     "Giao bóng như thế nào là đúng",
+     "Phát bóng như thế nào là đúng"],
+     "responses": ["Có rất nhiều kĩ thuật đánh bóng trong tennis như kĩ thuật trái tay, kĩ thuật phải tay, kĩ thuật volley, kĩ thuật smash, kĩ thuật lab. Nếu bạn muốn tìm rõ hơn về kĩ thuật nào xin hãy nói cho tôi biết"]
+    },
+    {"tag": "Kĩ thuật giao bóng",
+     "patterns": ["Kĩ thuật giao bóng",
+                "Kĩ thuật phát bóng",
+                "Phát bóng như thế nào", 
+                "Giao bóng như thế nào", 
+                "Có mẫy kĩ thuật giao bóng", 
+                "Làm sao để giao bóng tốt",
+                "Làm sao để phát bóng tốt",
+                "Giao bóng như thế nào là đúng",
+                "Phát bóng như thế nào là đúng"],
+     "responses": ["Có rất nhiều kĩ thuật giao bóng chính hay sử dụng như là kĩ thuật giao bóng thẳng, giao bóng xoáy ngang, giao bóng xoáy lên và giao bóng xoáy đổi hướng. Mỗi kĩ thuật có ưu nhược điểm riêng và đều giúp cho cách giao bóng chúng ta ổn định và dễ dàng hơn. Nếu bạn muốn tìm hiểu sâu hơn về kĩ thuật nào xin hãy nói cho tôi biết"]
+    },
+    {"tag": "Chuẩn bị gì khi chơi tennis",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Đánh bóng thuận tay",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Đánh bóng trái tay",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Đánh bóng Volley",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Đánh bóng Smash",
+     "patterns": [],
+     "responses": ["Bóng cười"]
+    },
+    {"tag": "Đánh bóng lab",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Kĩ thuật lốp bóng",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Kĩ thuật cắt bóng",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Cách di chuyển chân",
+     "patterns": [],
+     "responses": []
+    },
+    
+    {"tag": "Giao bóng thẳng",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Giao bóng xoáy ngang",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Giao bóng xoáy lên",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Giao bóng đổi hướng",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Các kĩ thuật nâng cao trong tennis",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Điểm lưu ý khi tự luyện tập tennis",
+     "patterns": [],
+     "responses": []
+    },{"tag": "Cách luyện thể lực khi chơi tennis",
+    "patterns": [],
+    "responses": []
+   },
+   {"tag": "Các bài tập cần thiết khi chơi tennis",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Một số kĩ thuật trong tennis",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Cách khắc chế đối thủ trên sân",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Chi phí khi chơi tennis",
+     "patterns": [],
+     "responses": []
+    },
+    {"tag": "Cách tự học tennis hiệu quả",
+     "patterns": [],
+     "responses": []
+    }
+],
+
+
+"tag": "Cách đánh tennis tốt hơn, các chiến thuật cơ bản"
+}
