@@ -8,7 +8,7 @@ import torch.optim as optim
 from model import NeuralNetwork1, NeuralNetwork2
 
 if __name__ == "__main__":
-    for i in range(2,3):
+    for i in range(5,6):
         prefix = 'Data/Data_{}'.format(i)
         train_x = np.load(prefix + '/train_x.npy')
         train_y = np.load(prefix + '/train_y.npy')
@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         model = model.to(device)
-        num_epoch = 300
+        num_epoch = 1000
         for epoch in range(num_epoch):
             sum_epoch = 0
             cnt = 0
@@ -73,7 +73,7 @@ if __name__ == "__main__":
                 sum_epoch += loss.item()
             print('Epoch: %d | Loss: %.4f' % (epoch+1, sum_epoch))
             #validate
-            if isTest and epoch % 5 == 0:
+            if isTest and (epoch+1) % 5 == 0:
                 with torch.no_grad():
                     correct = 0
                     total = 0

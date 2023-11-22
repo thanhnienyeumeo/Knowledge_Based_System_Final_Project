@@ -4,7 +4,7 @@ import json
 from underthesea import word_tokenize
 
 if __name__ == '__main__':
-    for i in range(2,3):
+    for i in range(5,6):
         prefix = 'Data/Data_{}'.format(i)
         with open(prefix + '/intents.json', encoding= 'utf-8') as json_data:
             intents = json.load(json_data)
@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
             documents['train'] = []
             documents['test'] = []
-            ratio = 0.75 if i == 1 or i == 5 else 1
+            ratio = 0.8 if i == 1 or i == 5 else 1
             for intent in intents['intents']:
                 print(intent['patterns'], type(intent['patterns']))
                 lenn = len(intent['patterns'])
