@@ -1,10 +1,10 @@
 import numpy as np
 from underthesea import word_tokenize
-words = np.load("Data/Data_1/words.npy")
-print(words)
+# words = np.load("Data/Data_1/words.npy")
+# print(words)
 classes = np.load("Data/Data_1/classes.npy")
-print(classes)
-print(len(words), len(classes))
+i, = np.where(classes == 'Luật chơi Tennis')
+print(i)
 # A = np.load("train_x.npy")
 # B = np.load("train_y.npy")
 # for id,i in enumerate(A):

@@ -5,16 +5,11 @@ import numpy as np
 import random
 import json
 from model import NeuralNetwork1, NeuralNetwork2
+from forward_reasoning import isTrue, rules, forward_reasoning
 
-train_x = np.load('Data/train_x.npy')
-train_y = np.load('Data/train_y.npy')
-words = np.load('Data/words.npy')
-classes = np.load('Data/classes.npy')
+
 entity_list = [line.rstrip('\n') for line in open('Data/entity.dat')]
-print(words)
-model = NeuralNetwork1(len(train_x[0]), len(train_y[0]))
 
-model.load_state_dict(torch.load('model.pth'))
 
 def bag_of_words(s_words, words):
     bag = [0 for _ in range(len(words))]
@@ -47,6 +42,7 @@ last_intent = None
 last_entity = None
 json_data = None
 data = None
+fact = set()
 
 while True:
     if not name:
@@ -65,9 +61,23 @@ while True:
             print("Bot: Xin lỗi, Bạn vui lòng hãy nhập số tương ứng với chủ đề bạn muốn tôi trả lời, từ 1 đến 5")
             continue
         choosed_part = int(inp)
-        json_data = open("Data/intents_{}.json".format(choosed_part), encoding= 'utf-8').read()
+        prefix = 'Data/Data_{}'.format(choosed_part)
+        json_data = open(prefix + "/intents.json", encoding= 'utf-8').read()
         data = json.loads(json_data)
-        print("Bot: Bạn muốn hỏi về phần {} phải không?".format(data['tag']))
+        
+
+
+        words = np.load(prefix + '/words.npy')
+        classes = np.load(prefix + '/classes.npy')
+        train_x = np.load(prefix + '/train_x.npy')
+        train_y = np.load(prefix + '/train_y.npy')
+        if choosed_part in [1,4]:
+            model = NeuralNetwork1(len(train_x[0]), len(train_y[0]))
+        else: 
+            model = NeuralNetwork2(len(train_x[0]), len(train_y[0]))
+        # load our saved model
+        model.load_state_dict(torch.load(prefix + '/model.pth'))
+        print("Bot: Tôi hiểu bạn muốn hỏi về phần {}. Hãy hỏi những câu hỏi bạn cần thắc mắc và tôi sẽ trả lời!".format(data['tag']))
         continue
 
     inp = input("You: ")
@@ -90,6 +100,13 @@ while True:
 
     
     results = predict_class(s_words, model, last_entity)
-    print(results)
-    # last_intent = [intent for intent in data['intents'] if intent['tag'] == results[0]['intent']][0]
-    # print(last_intent['responses'])
+    print(results, last_entity)
+
+    last_intent = [intent for intent in data['intents'] if intent['tag'] == results[0]['intent']][0]
+    index, = np.where(classes == last_intent['tag'])
+
+    if isTrue[(choosed_part, index)]: 
+        print('ok')
+        continue
+    isTrue[(choosed_part, index)] = 1
+    fact, new_fact = forward_reasoning(isTrue, fact, rules)
