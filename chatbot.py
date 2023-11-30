@@ -46,7 +46,7 @@ fact = set()
 
 while True:
     if not name:
-        inp = input("Bot: Chào bạn! Tôi rất vui được giúp bạn. Phiền bạn có thể cho tôi tên của bạn?")
+        inp = input("Bot: Chào bạn! Tôi rất vui được giúp bạn. Phiền bạn có thể cho tôi tên của bạn?\n")
         name = inp
         continue
     if not choosed_part:
@@ -54,11 +54,10 @@ while True:
                     \n1.Luật chơi và các thông tin cơ bản về tennis
                     \n2.Thông tin về các tuyển thủ tennis nổi tiếng
                     \n3.Thông tin về các giải đấu tennis
-                    \n4.Các tin tức mới nhất liên quan đến bộ môn tennis
-                    \n5.Cách đánh tennis tốt hơn cùng các chiến thuật cơ bản trong tennis'''.format(name))
+                    \n4.Cách đánh tennis tốt hơn cùng các chiến thuật cơ bản trong tennis\n'''.format(name))
         #validate
         if inp not in ['1','2','3','4','5']:
-            print("Bot: Xin lỗi, Bạn vui lòng hãy nhập số tương ứng với chủ đề bạn muốn tôi trả lời, từ 1 đến 5")
+            print("Bot: Xin lỗi, Bạn vui lòng hãy nhập số tương ứng với chủ đề bạn muốn tôi trả lời, từ 1 đến 5\n")
             continue
         choosed_part = int(inp)
         prefix = 'Data/Data_{}'.format(choosed_part)
@@ -83,7 +82,7 @@ while True:
     inp = input("You: ")
     if inp.lower() == "quit":
         if choosed_part is None:
-            print("Bot: Tạm biệt {}. Nếu bạn cần các thông tin về tennis hãy quay lại với hệ thống dựa trên tri thức của chúng tôi.".format(name))
+            print("Bot: Tạm biệt {}. Nếu bạn cần các thông tin về tennis hãy quay lại với hệ thống dựa trên tri thức của chúng tôi.\n".format(name))
             break
         else:
             choosed_part = None
@@ -100,6 +99,7 @@ while True:
 
     
     results = predict_class(s_words, model, last_entity)
+    print('Bot: Ban muon hoi ve phan: ', results[0]['intent'], 'dung khong\n')
     print(results, last_entity)
 
     last_intent = [intent for intent in data['intents'] if intent['tag'] == results[0]['intent']][0]
@@ -110,3 +110,5 @@ while True:
         continue
     isTrue[(choosed_part, index)] = 1
     fact, new_fact = forward_reasoning(isTrue, fact, rules)
+
+    #print('Bot :' + random.choice(last_intent['responses']))

@@ -68,7 +68,7 @@
                 "Thông tin các vòng đấu của giải",
                 "Các vòng đấu của giải",
                 "Giải đấu tổ chức với thể thức và cách thi đấu nào",
-                "Giải đấu tổ chức với thể thức và luật lệ nào",
+                "Giải đấu tổ chức với thể thức và luật lệ nào"
             ]
         },
         {
@@ -83,8 +83,15 @@
                 "Quá trình hình thành của giải",
                 "Quá trình và lịch sử giải đấu"
             ]
-        }
-    
+        },
+        {
+    "tag": "Các giải đấu",
+     "patterns": ["Danh sách các giải đấu Tennis",
+      "Các giải đấu nổi tiếng", 
+      "Các giải đấu nhiều người biết đên", 
+      "tên các giải đấu"],
+     "responses": ["Các giải đấu Tennis nổi tiếng nhất bao gồm: Grand Slam, ATP Finals, ATP Tour Masters 1000,WTA Tour Premier Mandatory/Premier 5, Davis Cup và Fed Cup. Đó cũng là các giải đấu mà tôi đang có thông tin. Nếu bạn muốn tìm hiểu về giải đấu nào vui lòng cho tôi biết"]
+    }
 ],
 
 "ATP Finals": [

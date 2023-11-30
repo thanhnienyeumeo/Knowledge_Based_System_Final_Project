@@ -4,11 +4,11 @@ import json
 from underthesea import word_tokenize
 
 if __name__ == '__main__':
-    for i in range(5,6):
+    for i in range(1,5):
         prefix = 'Data/Data_{}'.format(i)
         with open(prefix + '/intents.json', encoding= 'utf-8') as json_data:
             intents = json.load(json_data)
-            #print(intents)
+            print(intents)
             words = []
             classes = []
             documents = {}
@@ -35,7 +35,7 @@ if __name__ == '__main__':
             words = sorted(list(set(words)))
 
             print(words, len(words))
-            classes = sorted(list(set(classes)))
+            
             print(classes)
             #save words and classes
             np.save(prefix + '/words.npy', words)
@@ -69,7 +69,7 @@ if __name__ == '__main__':
                 for w in words:
                     bag.append(1) if w in pattern_words else bag.append(0)
 
-                # output is a '0' for each tag and '1' for current tag
+                # output is a '0' for each chuDe and '1' for current chuDe
                 output_row = list(output_empty)
                 output_row[classes.index(doc[1])] = 1
 
