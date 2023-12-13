@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
             documents['train'] = []
             documents['test'] = []
-            ratio = 0.8 if i == 1 or i == 5 else 1
+            ratio = 0.8
             for intent in intents['intents']:
                 print(intent['patterns'], type(intent['patterns']))
                 lenn = len(intent['patterns'])

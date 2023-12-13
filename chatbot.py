@@ -1,15 +1,29 @@
 import torch
-
 from underthesea import word_tokenize
 import numpy as np
 import random
 import json
-from model import NeuralNetwork1, NeuralNetwork2
-from forward_reasoning import isTrue, rules, forward_reasoning
+from model import NeuralNetwork1, NeuralNetwork2, NeuralNetwork3
+from forward_reasoning import forward_reasoning
+from rules import rules
 
 
-entity_list = [line.rstrip('\n') for line in open('Data/entity.dat')]
 
+name = None
+choosed_part = None
+last_intent = None
+json_data = None
+data = None
+fact = set()
+model = None
+classes = None
+
+def tokenize(sentence):
+    s_words =  word_tokenize(sentence)
+    for i in s_words:
+        if i == "quần vợt":
+            i = "tennis"
+    return s_words
 
 def bag_of_words(s_words, words):
     bag = [0 for _ in range(len(words))]
@@ -21,10 +35,9 @@ def bag_of_words(s_words, words):
                 bag[i] = 1
     return np.array(bag)
 
-def predict_class(tokenized, model, entity = None):
+def predict_class(tokenized, model):
     # Filter out predictions below a threshold
     p = bag_of_words(tokenized, words)
-    print("p: ", p)
     p = torch.from_numpy(p)
     res = model(p)
     ERROR_THRESHOLD = 0.25
@@ -36,32 +49,24 @@ def predict_class(tokenized, model, entity = None):
         return_list.append({ 'intent': classes[r[0]], 'probability': str(r[1])})
     return return_list
 
-name = None
-choosed_part = None
-last_intent = None
-last_entity = None
-json_data = None
-data = None
-fact = set()
+def welcome_question():
+    return input("Bot: Chào bạn! Tôi rất vui được giúp bạn. Phiền bạn có thể cho tôi tên của bạn?\nYou:")
 
-while True:
-    if not name:
-        inp = input("Bot: Chào bạn! Tôi rất vui được giúp bạn. Phiền bạn có thể cho tôi tên của bạn?\n")
-        name = inp
-        continue
-    if not choosed_part:
+def choose_part():
         inp = input('''Bot: Chào bạn {}. Bạn muốn hỏi về phần nào? Xin hãy nhập số tương ứng với chủ đề bạn muốn tôi trả lời
                     \n1.Luật chơi và các thông tin cơ bản về tennis
                     \n2.Thông tin về các tuyển thủ tennis nổi tiếng
                     \n3.Thông tin về các giải đấu tennis
-                    \n4.Cách đánh tennis tốt hơn cùng các chiến thuật cơ bản trong tennis\n'''.format(name))
+                    \n4.Cách đánh tennis tốt hơn cùng các chiến thuật cơ bản trong tennis\nYou: '''.format(name))
         #validate
-        if inp not in ['1','2','3','4','5']:
-            print("Bot: Xin lỗi, Bạn vui lòng hãy nhập số tương ứng với chủ đề bạn muốn tôi trả lời, từ 1 đến 5\n")
-            continue
+        if inp not in ['1','2','3','4', 'quit']:
+            print("Bot: Xin lỗi, Bạn vui lòng hãy nhập số tương ứng với chủ đề bạn muốn tôi trả lời, từ 1 đến 4\n")
+            return None, None, None, None, None, None
+        if inp == "quit":
+            return "quit", None, None, None, None, None
         choosed_part = int(inp)
         prefix = 'Data/Data_{}'.format(choosed_part)
-        json_data = open(prefix + "/intents.json", encoding= 'utf-8').read()
+        json_data = open(prefix + "/intents(2).json", encoding= 'utf-8').read()
         data = json.loads(json_data)
         
 
@@ -77,38 +82,53 @@ while True:
         # load our saved model
         model.load_state_dict(torch.load(prefix + '/model.pth'))
         print("Bot: Tôi hiểu bạn muốn hỏi về phần {}. Hãy hỏi những câu hỏi bạn cần thắc mắc và tôi sẽ trả lời!".format(data['tag']))
-        continue
+        return choosed_part, model, data, words, classes, json_data
 
-    inp = input("You: ")
-    if inp.lower() == "quit":
-        if choosed_part is None:
-            print("Bot: Tạm biệt {}. Nếu bạn cần các thông tin về tennis hãy quay lại với hệ thống dựa trên tri thức của chúng tôi.\n".format(name))
-            break
-        else:
-            choosed_part = None
-            json_data.close()
-            continue
-
-    inp = inp.lower()
-    #find entity and intent
-    s_words = word_tokenize(inp)
-    for i in entity_list:
-        if i.lower() in inp:
-            last_entity = i
-            break
-
-    
-    results = predict_class(s_words, model, last_entity)
-    print('Bot: Ban muon hoi ve phan: ', results[0]['intent'], 'dung khong\n')
-    print(results, last_entity)
+def reply(results, fact):
+    global last_intent, choosed_part, model, data, words, classes, json_data
+    if len(results) == 0:
+        print("Bot: Xin lỗi, tôi không hiểu ý của bạn. Bạn có thể hỏi lại được không?\n")
+        return
 
     last_intent = [intent for intent in data['intents'] if intent['tag'] == results[0]['intent']][0]
+    answer = last_intent['responses'][0]
+    print('Bot: ', answer)
     index, = np.where(classes == last_intent['tag'])
+    #print(index)
+    new_data = (choosed_part - 1, index[0])
+    fact.add(new_data)
+    fact, new_fact = forward_reasoning(fact, rules)
+    if len(new_fact) == 0: return fact
 
-    if isTrue[(choosed_part, index)]: 
-        print('ok')
+    goiY = "Có thể bạn muốn quan tâm: \n"
+    for chuDe, chuDeCon in new_fact:
+        prefix = 'Data/Data_{}'.format(chuDe + 1)
+        recommend_class = np.load(prefix + "/classes.npy")
+        if chuDe + 1 == choosed_part:
+            goiY += recommend_class[chuDeCon] + "\n"
+        else:
+            goiY += recommend_class[chuDeCon] + "( chủ đề thứ " + str(chuDe + 1) + ")\n" 
+    print(goiY)
+    return fact
+
+import warnings
+warnings.filterwarnings("ignore")
+
+while True:
+    if not name:
+        name = welcome_question()
         continue
-    isTrue[(choosed_part, index)] = 1
-    fact, new_fact = forward_reasoning(isTrue, fact, rules)
-
+    if not choosed_part:
+        choosed_part, model, data, words, classes, json_data = choose_part()
+        continue
+    if choosed_part == "quit":
+        print("Bot: Tạm biệt {}. Nếu bạn cần các thông tin về tennis hãy quay lại với hệ thống dựa trên tri thức của chúng tôi.\n".format(name))
+        break
+    inp = input("You: ")
+    if inp.lower() == "quit":
+            choosed_part = None
+            continue
+    s_words = tokenize(inp.lower())
+    results = predict_class(s_words, model)
+    fact = reply(results, fact)
     #print('Bot :' + random.choice(last_intent['responses']))

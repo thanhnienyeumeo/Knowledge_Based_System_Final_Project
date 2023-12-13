@@ -5,16 +5,20 @@ from underthesea import word_tokenize
 for i in range(1,5):
     prefix = 'Data/Data_{}'.format(i)
     test_x = np.array([])
+    test_y = np.array([])
     try:
         classes = np.load(prefix + "/classes.npy")
         train_x = np.load(prefix + '/train_x.npy')
+        train_y = np.load(prefix + '/train_y.npy')
         if(i == 1 or i == 5):
             test_x = np.load(prefix + '/test_x.npy')
+            test_y = np.load(prefix + '/test_y.npy')
     except:
         continue
     for e,v in enumerate(classes):
         print(e,v)
-    print('----- Chu de "{}" has {} classes and {} data-----'.format(i,len(classes),len(train_x)+len(test_x)))
+    print('----- Chu de {} has {} classes and {} data-----'.format(i,len(classes),len(train_x)+len(test_x)))
+   # print(len(train_x), len(test_x), len(train_y), len(test_y))
     
 # A = np.load("train_x.npy")
 # B = np.load("train_y.npy")

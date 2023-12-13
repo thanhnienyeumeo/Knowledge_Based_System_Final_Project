@@ -2,8 +2,10 @@
     {"tag": "Luật chơi Tennis",
      "patterns": ["cách chơi tennis", 
                 "luật chơi tennis", "luật chơi chung của tennis", 
-                "luật chơi chung"],
-     "responses": ["Chơi tennis rất dễ"]
+                "luật chơi chung",
+                "cách chơi đúng luật tennis",
+                "cách chơi chung của tennis"],
+     "responses": ["Một trận quần vợt gồm có điểm, game và set để tính chung cho cả trận. Trong những giải nam lớn như Grand Slam, ai thắng trước 3 set thì thắng trận. Trong mỗi set, ai thắng trước 6 game thì thắng set, nhưng phải hơn đối thủ 2 game. Nếu đến tỉ số 5–5 thì sẽ chơi tiếp đến khi 1 đối thủ thắng nhiều hơn đối thủ kia 2 game để quyết định người thắng set đó. Lưu ý: Nếu tỉ số hiệp là 7–6 thì set cũng kết thúc (nhưng không phải là set cuối cùng khi trước đó cả hai đã hòa 1–1 hay 2–2 tùy theo set của trận đấu) Trong mỗi game tính điểm như sau: không (0), 15, 30, 40 và thắng game. Nếu tỉ số đạt 40–40, có nghĩa là lợi đều (deuce) thì thi đấu tiếp đến khi 1 đối thủ ghi nhiều hơn đối phương 2 điểm."]
     },
     {"tag": "Định nghĩa Tennis",
      "patterns": ["giải thích về tennis",
@@ -11,7 +13,7 @@
                 "Môn thể thao tennis có nghĩa là gì", 
                 "giải thích về tennis", 
                 "tennis là gì"],
-     "responses": []
+     "responses": ["Quần vợt (Tiếng Anh: Tennis) là môn thể thao chơi giữa hai người (đánh đơn) hay hai đội trong đó mỗi đội hai người (đánh đôi). Người chơi sử dụng vợt lưới để đánh một quả bóng làm bằng cao su bọc nỉ rỗng gọi là bóng quần vợt về phía sân đối phương. Quần vợt hiện nay là một môn thể thao rất phổ biến ở nhiều nước và được thi đấu tại các kỳ Thế vận hội. Trên thế giới có hàng triệu người chơi quần vợt và hàng triệu"]
     },
     {"tag": "Lịch sử tennis",
      "patterns": ["Lịch sử của môn tennis", 
@@ -21,7 +23,7 @@
                 "lịch sử phát triển", 
                 "năm ra đời", 
                 "ra đời từ khi nào"],
-     "responses": []
+     "responses": ["nhiều chuyên gia tin rằng năm 1873, một thiếu tá quân đội Anh tên là Walter Clopton Wingfield đã phát minh ra bộ môn này. Lúc đó người Anh gọi trò chơi này là 'quần vợt trên sân cỏ'. Ông Wingfield gọi trò chơi này là Sphairistiké và nói rằng ông đã dựa trên một trò chơi cổ xưa của người Hy Lạp.Người Anh mang trò chơi sang đảo Bermuda năm 1873, và từ Bermuda nó được đem sang Mỹ năm 1874 và chơi ở Đảo Staten, New York. Như nhiều môn thể thao khác của người Anh, họ đã đem truyền bá chúng đi khắp các thuộc địa của họ trên thế giới làm cho bộ môn này phổ biến nhanh chóng.Trò thể thao Jeu de paume của Pháp cũng được coi là tiền thân của quần vợt ngày nay."]
     },
     {"tag": "Các thiết bị trong tennis",
      "patterns": ["Cần những thiết bị gì", 
@@ -29,7 +31,7 @@
                 "Các trang bị chính", 
                 "các thiết bị chính khi chơi tennis",
                 "Các thiết bị chính khi chơi tennis"],
-     "responses": []
+     "responses": ["Bao gồm: bóng quần vợt, vợt và các dụng cụ khác(giày, quần áo thể thao,…Bóng quần vợt tròn làm bằng cao su bao nỉ bên ngoài, bên trong thì rỗng. Thường bóng màu vàng, bóng có đường kính giữa 6,35 và 6,6 cm, nặng giữa 56 và 59,4 g.Vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ."]
     },
     {"tag": "trình tự giao bóng trong tennis",
      "patterns": ["quy tắc cụ thể về trình tự giao bóng",
@@ -40,7 +42,7 @@
                 "thứ tự giao bóng trong tennis",
                 "thứ tự giao bóng trong tennis"],
 
-     "responses": []
+     "responses": ["Trình tự giao bóng của tay vợt sẽ lần lượt từ bên phải rồi sang bên trái phần sân của mình và luôn bắt đầu từ bên phải ở mỗi lượt thi đấu. Bóng đã giao phải bay qua lưới và rơi vào ô giao bóng chéo với vị trí đang đứng của người giao bóng hoặc trên các vạch của ô giao bóng trước khi đối thủ đánh trả bóng lại."]
     },
     {"tag": "Luật giao bóng lại",
      "patterns": ["Quy định về giao bóng lại",
@@ -48,41 +50,41 @@
                 "Luật giao bóng lại trong tennis",
                 "Luật giao bóng lại trong tennis",
                 "số lần giao bóng lại",
-                "số lần giao bóng lại trong tennis",
                 "số lần giao bóng lại trong tennis"],
      "responses": []
     },
     {"tag": "luật khiếu nại",
-     "patterns": ["Làm thế nào để khiếu nại trong tennis?",
-     "Luật khiếu nại  trong tennis?",
-     "Khi nào được khiếu nại trong tennis?",
+     "patterns": ["Làm thế nào để khiếu nại trong tennis",
+     "Luật khiếu nại  trong tennis",
+     "Khi nào được khiếu nại trong tennis",
      "Khiếu nại được áp dụng trong trường hợp nào",
-     "Có bao nhiêu lần khiếu nại thực hiện?",
-     "Cách khiếu nại trong tennis?",
-     "Cách khiếu nại đúng luật"],
+     "Có bao nhiêu lần khiếu nại thực hiện",
+     "Cách khiếu nại trong tennis",
+     "Cách khiếu nại đúng luật tennis"],
      "responses": []
     },
     {"tag": "Tác dụng của môn tennis",
-     "patterns": ["Tác dụng tích cực của việc chơi tennis là gì?",
-     "Chơi tennis có lợi ích gì cho sức khỏe?",
-     "Tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần?",
+     "patterns": ["Tác dụng tích cực của việc chơi tennis là gì",
+     "Chơi tennis có lợi ích gì cho sức khỏe",
+     "Tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần",
      "Lợi ích của tennis",
      "Lợi ích môn thể thao tennis",
-     "Tác dụng tích cực của việc chơi tennis là gì?",
-     "Chơi tennis có lợi ích gì cho sức khỏe?",
-     "tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần?"],
+     "Tác dụng tích cực của việc chơi tennis là gì",
+     "Chơi tennis có lợi ích gì cho sức khỏe",
+     "tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần"],
 
      "responses": []
     },
     {"tag": "Những người không nên chơi tennis",
-     "patterns": ["Ai không nên tham gia vào môn tennis?",
-     "những đối tượng không nên chơi tennis không?",
-     "Tennis không phù hợp với ai?",
+     "patterns": ["Ai không nên tham gia vào môn tennis",
+     "những đối tượng không nên chơi tennis không",
+     "Tennis không phù hợp với ai",
+     "những người không nên chơi tennis",
      "Ai không nên chơi tennis"],
      "responses": []
     },
     {"tag": "Giày",
-     "patterns": ["Tại sao giày tennis quan trọng trong môn thể thao này?",
+     "patterns": ["Tại sao giày tennis quan trọng trong môn thể thao này",
      "Giày tennis cần có điểm gì đặc biệt",
      "Có gợi ý việc chọn giày tennis",
      "Gợi ý chọn giày tennis",
@@ -91,8 +93,8 @@
     },
     {"tag": "các cơ quan trong tennis",
      "patterns": ["Các tổ chức quản lý",
-                "Ai chịu trách nhiệm tổ chức các giải đấu tennis lớn?",
-                "Có những tổ chức nào quản lý tennis trên toàn thế giới?",
+                "Ai chịu trách nhiệm tổ chức các giải đấu tennis lớn",
+                "Có những tổ chức nào quản lý tennis trên toàn thế giới",
                 "Tổ chức lớn trong tennis",
                 "Các cơ quan chính trong tennis",
                 "Cơ quan lớn tổ chức"],
@@ -114,7 +116,7 @@
     "tính điểm trong hiệp",
     "tính điểm trong trận đấu",
     "tính điểm tennis"],
-     "responses": ["Điểm thì tự đi mà tính "]
+     "responses": []
     },
     {"tag": "Vợt",
      "patterns": [ "vợt tennis", 
@@ -130,28 +132,28 @@
                 "tiêu chuẩn vật liệu bóng",
                 "kích cỡ quả bóng tennis",
                 "kích thước chuẩn bóng"],
-     "responses": ["Bóng cười"]
+     "responses": []
     },
     {"tag": "Sân",
      "patterns": ["tiêu chuẩn sân thi đấu",
              "sân tennis chuẩn",
               "tiêu chuẩn sân thi đấu tennis",
                "sân thi đấu tennis"],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "Giao bóng",
      "patterns": ["cách giao bóng hợp lệ", 
                     "giao bóng", 
                     "luật giao bóng tennis", 
                     "luật giao bóng tennis"],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "lỗi giao bóng",
      "patterns": ["giao bóng không hợp lệ", 
                 "lỗi giao bóng", 
                 "lỗi giao bóng tennis",  
                 "lỗi giao bóng tennis"],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "tie-break",
      "patterns": ["luật tie-break tennis", 
@@ -161,24 +163,25 @@
             "Khi hòa nhau tỷ số 6-6",
             "nếu hòa nhau chung cuộc 6 đều",
             "tie-break áp dụng thế nào nếu hai đối thủ hòa nhau 6-6"],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "luật đánh đơn",
-     "patterns": ["luật đánh đơn tennis", "luật đánh đơn tennis"],
-     "responses": ["Luật Tennis tại Anh"]
+     "patterns": ["luật đánh đơn tennis", "luật chơi đánh đơn", "luật lệ khi chơi đánh đơn tennis", "luật đánh đơn tennis"],
+     "responses": []
     },
     {"tag": "luật đánh đôi",
-     "patterns": ["luật đánh đôi tennis", "luật đánh đôi tennis"],
-     "responses": ["Luật Tennis tại Anh"]
+     "patterns": ["luật đánh đôi tennis", "luật chơi đánh đôi", "luật lệ khi chơi đánh đôi tennis", "luật đánh đôi tennis"],
+     "responses": []
     },
     
     {"tag": "lưới",
      "patterns": ["lưới tennis", "lưới tennis", "tiêu chuẩn lưới", "ý nghĩa lưới", "lưới để làm gì"],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "trọng tài",
-     "patterns": ["trọng tài tennis", "trọng tài tennis", "quyết định trọng tài"],
-     "responses": ["Luật Tennis tại Anh"]
+     "patterns": ["trọng tài tennis", "quyền hạn trọng tài", "quyết định trọng tài", "ý nghĩa trọng tài tennis",
+                "vai trò trọng tài tennis", "trọng tài trong môn tennis"],
+     "responses": []
     },
     {"tag": "số set tennis",
      "patterns": ["tennis có mấy set", 
@@ -188,7 +191,7 @@
                 "mấy set đấu một trận",
                 "có bao nhiêu set đấu trong một trận đấu tennis"
     ],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "số set tennis",
      "patterns": ["tennis có mấy set", 
@@ -198,7 +201,7 @@
                 "mấy set đấu một trận",
                 "có bao nhiêu set đấu trong một trận đấu tennis"
     ],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "chiến thắng trong tennis",
      "patterns": ["cách xác định người chiến thắng tennis",
@@ -212,7 +215,7 @@
      "cách tìm người thắng",
      "cách xác định người thua"
     ],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "chơi tennis ở đâu",
      "patterns": ["thường chơi tennis ở đâu", 
@@ -221,7 +224,7 @@
                 "nơi chơi tennis",
                 "tìm chỗ chơi tennis"
     ],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "Nguồn gốc cái tên tennis",
      "patterns": ["cái tên tennis xuất phát từ đâu", 
@@ -232,7 +235,7 @@
                 "đặt tên tennis",
                 "lịch sử và nguồn gốc của cái tên tennis"
     ],
-     "responses": ["Luật Tennis tại Anh"]
+     "responses": []
     },
     {"tag": "Những cái tên nổi tiếng trong tennis",
      "patterns": ["những tay vợt nổi tiếng nhất trong lịch sử tennis",
@@ -259,18 +262,18 @@
         "Người chơi được phép nghỉ bao lâu giữa các set trong một trận đấu tennis",
         "thời gian người chơi nghĩ giữa các set",
         "thời gian nghỉ giữa các set",
-        "Thời gian nghỉ giữa set thường được kiểm soát như thế nào?",
+        "Thời gian nghỉ giữa set thường được kiểm soát như thế nào",
         "quy tắc về thời gian nghỉ giữa các set ở các giải đấu tennis",
         "thời gian nghỉ giữa các set tennis"],
         "responses": []
     },
     {
         "tag": "Điểm khác biệt giữa đánh đôi và đánh đơn",
-        "patterns": ["Điểm khác nhau giữa đánh đôi và đánh đơn trong tennis?",
-        "khác biệt giữa đánh đôi và đánh đơn không?",
-        "sự khác nhau giữa việc chơi đánh đôi và đánh đơn trong tennis?",
-        "có điểm khác biệt giữa việc thi đấu đánh đôi và đánh đơn?",
-        "những sự khác nhau trong đánh đôi và đánh đơn?",
+        "patterns": ["Điểm khác nhau giữa đánh đôi và đánh đơn trong tennis",
+        "khác biệt giữa đánh đôi và đánh đơn không",
+        "sự khác nhau giữa việc chơi đánh đôi và đánh đơn trong tennis",
+        "có điểm khác biệt giữa việc thi đấu đánh đôi và đánh đơn",
+        "những sự khác nhau trong đánh đôi và đánh đơn",
         "sự giống và khác của đánh đôi và đánh đơn",
         "đánh đôi và đánh đơn giống nhau và khác nhau",
         "phân biệt đánh đôi và đánh đơn",
@@ -316,12 +319,12 @@
     {
         "tag": "sân cỏ",
         "patterns": ["Sân cỏ trong tennis có điểm đặc biệt",
-        "Tại sao một số giải đấu lớn chọn sân cỏ làm sân thi đấu",
+        "Tại sao chọn sân cỏ làm sân thi đấu",
         "sân cỏ trong tennis",
         "sân cỏ tennis so với các loại sân",
         "đặc điểm sân cỏ tennis",
         "Lợi ích và khó khăn khi thi đấu trên sân cỏ so với các loại sân khác",
-        "Có những chiến thuật phù hợp hơn khi chơi trên sân cỏ"],
+        "Những điều phù hợp hơn khi chơi trên sân cỏ"],
         "responses": []
     },
     {
@@ -331,6 +334,7 @@
         "Các loại sân tennis có sự khác nhau",
         "Phân biệt sân đất nhện, sân cứng và sân cỏ",
         "Các loại sân thi đấu tennis khác nhau",
+        "khác biệt giữa ba loại sân chính",
         "các loại sân trong tennis",
         "Các tay vợt thi đấu trên ba loại sân"],
         "responses": []
@@ -342,7 +346,7 @@
         "Tầm quan trọng của huấn luyện viên",
         "huấn luyện viên trong tennis",
         "vai trò của huấn luyện viên",
-        "Cách huấn luyện viên giúp cải thiện kỹ thuật và chiến thuật cho tay vợt?"],
+        "Cách huấn luyện viên giúp cải thiện kỹ thuật và chiến thuật cho tay vợt"],
         "responses": []
     },
     {
@@ -350,7 +354,7 @@
         "patterns": ["Khi nào người chơi cần phải đổi sân trong trận đấu tennis",
         "Quy tắc và quá trình đổi sân trong một trận tennis",
         "Có quy định cụ thể nào việc đổi sân khi thi đấu tennis",
-        "Điểm lưu ý khi tay vợt phải thực hiện việc đổi sân?",
+        "Điểm lưu ý khi tay vợt phải thực hiện việc đổi sân",
         "lưu ý khi đổi sân trong tennis",
         "đổi sân trong tennis"],
         "responses": []
@@ -358,6 +362,7 @@
     {
         "tag": "quá trình diễn ra một trận tennis",
         "patterns": ["Các bước và quy trình diễn ra một trận đấu tennis",
+        "quá trình diễn ra một trận đấu tennis",
         "Quy tắc và quy trình từng set và từng game trong một trận tennis",
         "quá trình một trận đấu tennis diễn ra",
         "Nguyên tắc và luật lệ quy định cho từng giai đoạn trong một trận đấu tennis",
@@ -366,21 +371,12 @@
         "responses": []
     },
     {
-        "tag": "Ace trong tennis",
-        "patterns": ["Khái niệm và ý nghĩa của thuật ngữ 'Ace' trong tennis",
-        "Cách xác định ace trong tennis?",
-        "Ace trong tennis",
-        "khái niệm ace trong tennis",
-        "giao bóng ace trong tennis",
-        "ace trong tennis là gì"],
-        "responses": []
-    },
-    {
         "tag": "người nhặt bóng trong tennis",
         "patterns": ["nhặt bóng trong tennis",
                     "các cậu bé nhặt bóng trong tennis",
                     "ballboy trong tennis",
-                    "người nhặt bóng"],
+                    "người nhặt bóng",
+                    "nhặt bóng tennis"],
         "responses": []
     }
 ],
