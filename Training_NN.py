@@ -8,7 +8,7 @@ import torch.optim as optim
 from model import NeuralNetwork1, NeuralNetwork2, NeuralNetwork3
 
 if __name__ == "__main__":
-    for i in [2,3]:
+    for i in [1,2,3,4]:
         prefix = 'Data/Data_{}'.format(i)
         train_x = np.load(prefix + '/train_x.npy')
         train_y = np.load(prefix + '/train_y.npy')
@@ -49,9 +49,6 @@ if __name__ == "__main__":
                 sum_epoch = 0
                 cnt = 0
                 for inputs, labels in train:
-                    # zero the parameter gradients
-                    
-                    #inputs = inputs.long()
                     inputs = inputs.to(device)
                     labels = labels.to(device)
                     optimizer.zero_grad()
@@ -59,19 +56,12 @@ if __name__ == "__main__":
                     
                     outputs = model(inputs)
                     outputs = outputs.unsqueeze(0)
-                    
-                    
                     labels = labels.unsqueeze(0)
-                    
-                # print(labels.shape)
-                #
                     loss = criterion(outputs, labels)
                     loss.backward()
                     optimizer.step()
-                    #print('Epoch: %d | Data: %d | Loss: %.4f' % (epoch+1, cnt, loss.item()))
                     cnt+=1
                     sum_epoch += loss.item()
-                
                 #validate
                 if epoch == num_epoch - 1:
                     print("final loss is: %d", sum_epoch)

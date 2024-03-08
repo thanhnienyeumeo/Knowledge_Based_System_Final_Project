@@ -1,18 +1,21 @@
-{"intents": [
-    {
-        "tag": "Khái niệm",
-        "patterns": [
-            "Giải là gì", 
-            "Một số thông tin về giải đấu", 
-            "Giải đấu là gì", 
-            "Giải đấu tennis", 
-            "Các giải đấu tennis",
-            "Ý nghĩa giải đấu",
-            "Định nghĩa giải đấu",
-            "Các thông tin giải"
+{
+    "intents": [
+        {
+            "tag": "Khái niệm",
+            "patterns": [
+                "Giải là gì",
+                "Một số thông tin về giải đấu",
+                "Giải đấu là gì",
+                "Giải đấu tennis",
+                "Các giải đấu tennis",
+                "Ý nghĩa giải đấu",
+                "Định nghĩa giải đấu",
+                "Các thông tin giải"
+            ],
+            "responses": [
+                "Một giải đấu tennis là một sự kiện thể thao mà các tay vợt chuyên nghiệp tham gia, cạnh tranh để giành chiến thắng trong một chuỗi các trận đấu với thể thức quy định. Các giải đấu này thường được tổ chức tại các địa điểm và quốc gia khác nhau trên toàn cầu, và họ có thể thu hút sự chú ý lớn từ cộng đồng yêu tennis."
             ]
-     
-    },
+        },
         {
             "tag": "Thời gian thi đấu",
             "patterns": [
@@ -23,6 +26,9 @@
                 "Lịch trình giải",
                 "Thời gian thi đấu của giải",
                 "Thời gian giải"
+            ],
+            "responses": [
+                "Thời gian diễn ra giải đấu thường được xác định trước và thông tin về lịch trình thi đấu có thể được tìm thấy trên trang web chính thức của giải hoặc các nguồn tin tức thể thao uy tín."
             ]
         },
         {
@@ -39,6 +45,9 @@
                 "Tiền thưởng của giải",
                 "Số tiền thưởng của giải đấu",
                 "Nhà vô địch có số tiền thưởng là bao nhiêu"
+            ],
+            "responses": [
+                "Thời gian diễn ra giải đấu thường được xác định trước và thông tin về lịch trình thi đấu có thể được tìm thấy trên trang web chính thức của giải hoặc các nguồn tin tức thể thao uy tín."
             ]
         },
         {
@@ -55,6 +64,9 @@
                 "Nơi diễn ra giải đấu",
                 "Giải đấu được diễn ra ở đâu",
                 "Tên quốc gia nào tổ chức giải đấu"
+            ],
+            "responses": [
+                "Thông tin về địa điểm tổ chức giải đấu thường được công bố trước trên truyền thông và các trang web chính thức của giải. Các sân đấu có thể nằm ở nhiều quốc gia và thường được lựa chọn dựa trên hạ infrastruture, sức chứa và uy tín của giải."
             ]
         },
         {
@@ -69,6 +81,9 @@
                 "Các vòng đấu của giải",
                 "Giải đấu tổ chức với thể thức và cách thi đấu nào",
                 "Giải đấu tổ chức với thể thức và luật lệ nào"
+            ],
+            "responses": [
+                "Thể thức và cách thi đấu của mỗi giải đấu có thể khác nhau, bao gồm cả số set, loại hình thi đấu (đơn hay đôi), và luật lệ cụ thể. "
             ]
         },
         {
@@ -82,57 +97,23 @@
                 "Những kỷ niệm đáng nhớ của giải",
                 "Quá trình hình thành của giải",
                 "Quá trình và lịch sử giải đấu"
+            ],
+            "responses": [
+                "Lịch sử của một giải đấu bao gồm các thông tin về việc thành lập, những kỷ niệm đáng nhớ, các tay vợt nổi tiếng từng vô địch và các sự kiện đặc biệt trong quá khứ của giải."
             ]
         },
         {
-    "tag": "Các giải đấu",
-     "patterns": ["Danh sách các giải đấu Tennis",
-      "Các giải đấu nổi tiếng", 
-      "Các giải đấu nhiều người biết đên", 
-      "tên các giải đấu"],
-     "responses": ["Các giải đấu Tennis nổi tiếng nhất bao gồm: Grand Slam, ATP Finals, ATP Tour Masters 1000,WTA Tour Premier Mandatory/Premier 5, Davis Cup và Fed Cup. Đó cũng là các giải đấu mà tôi đang có thông tin. Nếu bạn muốn tìm hiểu về giải đấu nào vui lòng cho tôi biết"]
-    }
-],
-
-"ATP Finals": [
-    {"tag": "Khái niệm",
-     "responses": ["Chơi tennis rất dễ"]
-    },
-    {"tag": "Thời gian",
-     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
-     "responses": ["Điểm thì tự đi mà tính "]
-    }
-],
-"Australian Open": [
-    {"tag": "Khái niệm",
-     "responses": ["Chơi tennis rất dễ"]
-    },
-    {"tag": "Thời gian",
-     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
-     "responses": ["Điểm thì tự đi mà tính "]
-    }
-],
-"Davis Cup":
-[
-    {"tag": "Khái niệm",
-     "responses": ["Chơi tennis rất dễ"]
-    },
-    {"tag": "Thời gian",
-     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
-     "responses": ["Điểm thì tự đi mà tính "]
-    }
-],
-"Unknown":
-[
-    {"tag": "Khái niệm",
-     "responses": ["Chơi tennis rất dễ"]
-    },
-    {"tag": "Thời gian",
-     "patterns": ["cách tính điểm", "điểm số", "điểm số tennis", "điểm số tennis"],
-     "responses": ["Điểm thì tự đi mà tính "]
-    }
-],
-
-
-"tag": "Thông tin về các giải đấu tennis"
+            "tag": "Các giải đấu",
+            "patterns": [
+                "Danh sách các giải đấu Tennis",
+                "Các giải đấu nổi tiếng",
+                "Các giải đấu nhiều người biết đên",
+                "tên các giải đấu"
+            ],
+            "responses": [
+                "Các giải đấu Tennis nổi tiếng nhất bao gồm: Grand Slam, ATP Finals, ATP Tour Masters 1000,WTA Tour Premier Mandatory/Premier 5, Davis Cup và Fed Cup. Đó cũng là các giải đấu mà tôi đang có thông tin. Nếu bạn muốn tìm hiểu về giải đấu nào vui lòng cho tôi biết"
+            ]
+        }
+    ],
+    "tag": "Thông tin về các giải đấu tennis"
 }

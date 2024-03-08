@@ -7,7 +7,7 @@
      "di chuyển chân đúng cách",
      "di chuyển chân đúng cách trong tennis",
      "di chuyển chân chuẩn trong tennis"],
-     "responses": []
+     "responses": ["Để di chuyển chân hiệu quả trong tennis, bạn cần tập trung vào việc duy trì sự linh hoạt, sẵn sàng đổi hướng và sử dụng các bước chuyển động ngắn, nhanh chóng để đưa mình vào vị trí tốt nhất để đánh bóng."]
     },
     {"tag": "Cách đánh bóng trong tennis",
      "patterns": ["Kĩ thuật đánh bóng",
@@ -44,7 +44,7 @@
      "những vật dụng nào cần thiết khi đi chơi tennis",
      "Chuẩn bị trước khi chơi tennis"
     ],
-     "responses": []
+     "responses": ["Trước khi vào sân tennis, hãy chuẩn bị đầy đủ các dụng cụ cần thiết như vợt, giày tennis, quần áo thoải mái, nước uống và các vật dụng khác tùy thuộc vào điều kiện thời tiết."]
     },
     {"tag": "Đánh bóng thuận tay",
      "patterns": ["kĩ thuật đánh bóng thuận tay là gì",
@@ -53,7 +53,7 @@
                 "luyện tập đánh bóng thuận tay",
                 "cần luyện tập đánh bóng thuận tay",
                 "đánh bóng thuận tay cần những "],
-     "responses": []
+     "responses": ["Đánh bóng thuận tay là cú đánh thường dùng nhất trong tennis. Để đánh bóng thuận tay tốt, bạn cần tập luyện để có lực, độ chính xác và độ xoáy phù hợp."]
     },
     {"tag": "Đánh bóng trái tay",
      "patterns": ["kĩ thuật đánh bóng trái tay là gì",
@@ -62,7 +62,7 @@
      "luyện tập đánh bóng trái tay",
      "cách sử dụng kĩ thuật trái tay",
      "đánh bóng trái tay cần những "],
-     "responses": []
+     "responses": ["Đánh bóng trái tay là cú đánh cần thiết để phòng thủ và phản công. Để đánh bóng trái tay tốt, bạn cần tập luyện để có lực, độ chính xác và độ xoáy phù hợp."]
     },
     {"tag": "Đánh bóng Volley",
      "patterns": ["Làm thế nào để thực hiện kĩ thuật đánh bóng Volley",
@@ -71,7 +71,7 @@
     "Cách luyện tập kĩ thuật đánh bóng Volley",
     "Cách thực hiện kĩ thuật volley",
     "kĩ thuật volley là gì"],
-     "responses": []
+     "responses": ["Đánh bóng volley là cú đánh nhanh và mạnh được thực hiện khi bóng còn ở trên không. Để đánh bóng volley tốt, bạn cần tập luyện để có phản xạ nhanh và lực đánh chính xác."]
     },
     {"tag": "Đánh bóng Smash",
      "patterns": ["Đánh bóng smash có khó không",
@@ -83,7 +83,7 @@
     "Cách luyện tập đánh bóng smash",
     "Cách sử dụng kĩ thuật đánh bóng smash",
     "Cách thực hiện kĩ thuật đánh bóng smash hiệu quả"],
-     "responses": ["Bóng cười"]
+     "responses": ["Đánh bóng smash là cú đánh mạnh và dứt điểm được thực hiện khi bóng ở trên cao. Để đánh bóng smash tốt, bạn cần tập luyện để có lực đánh mạnh và độ chính xác cao."]
     },
     {"tag": "Đánh bóng lab",
      "patterns": ["Đánh bóng lab có khó không",
@@ -95,7 +95,7 @@
      "Cách luyện tập đánh bóng lab",
      "Cách sử dụng kĩ thuật đánh bóng lab",
      "Cách thực hiện kĩ thuật đánh bóng lab hiệu quả"],
-     "responses": []
+     "responses": ["Kỹ thuật lab là đánh bóng sau khi nảy 1 phát trên mặt sân. Bạn cần cóđường chạy ngang sát lưới để thực hiện cú đánh ngắn sau khi bóng nảy phía bên kia. Luyện tập đánh lab thường xuyên giúp nâng cao khả năng di chuyển và tốc độ phản xạ."]
     },
     {"tag": "Kĩ thuật lốp bóng",
      "patterns": ["lốp bóng có khó không",
@@ -107,7 +107,7 @@
      "Cách luyện tập lốp bóng",
      "Cách sử dụng kĩ thuật lốp bóng ",
      "Cách thực hiện kĩ thuật lốp bóng  hiệu quả"],
-     "responses": []
+     "responses": ["“Kĩ thuật lốp bóng là đánh cho banh bay theo hướng ngoài đường chéo sân. Để cắt bóng bạn đánh banh từ dưới lên trên với góc nghiêng. Cần luyện độ chính xác và góc đánh cho phù hợp."]
     },
     {"tag": "Kĩ thuật cắt bóng",
      "patterns": ["cắt bóng có khó không",
@@ -119,7 +119,7 @@
      "Cách luyện tập cắt bóng",
      "Cách sử dụng kĩ thuật cắt bóng ",
      "Cách thực hiện kĩ thuật cắt bóng  hiệu quả"],
-     "responses": []
+     "responses": ["“Kĩ thuật cắt bóng là đánh cho banh bay theo hướng ngoài đường chéo sân. Để cắt bóng bạn đánh banh từ dưới lên trên với góc nghiêng. Cần luyện độ chính xác và góc đánh cho phù hợp."]
     },
     {"tag": "Cách di chuyển chân",
      "patterns": ["di chuyển chân thế nào hợp lý",
@@ -128,7 +128,7 @@
      "cách di chuyển chân hiệu quả",
      "Cách luyện tập di chuyển chân",
     "cách hợp lý khi di chuyển chân"],
-     "responses": []
+     "responses": ["Khi di chuyển, bước chân đầu tiên luôn là bước tách xa nhất. Đưa trọng tâm về phía trước và hạ thấp tâm trung. Di chuyển nhanh nhẹn, linh hoạt giữa các pha tấn công và phòng ngự."]
     },
     
     {"tag": "Giao bóng thẳng",
@@ -139,7 +139,7 @@
     "Cách giao bóng thẳng",
     "Luyện tập kĩ thuật giao bóng thẳng",
     "Giao bóng thẳng hiệu quả"],
-     "responses": []
+     "responses": ["Đưa racket ra phía trước, tay trái giữ chặt quả bóng rồi giao đều cho đối phương. Luyện tập đưa racket lên cao để có tầm nhìn tốt hơn trong giao bóng."]
     },
     {"tag": "Giao bóng xoáy ngang",
      "patterns": ["Giao bóng xoáy ngang như thế nào",
@@ -148,7 +148,7 @@
      "tập giao bóng xoáy ngang hiệu quả",
      "cần thiết khi luyện tập giao bóng xoáy ngang",
      "Giao bóng xoáy ngang hiệu quả"],
-     "responses": []
+     "responses": ["Đánh nhẹ banh từ trong ra ngoài, tạo góc xoay cho banh bay ngang qua sân. Luyện tập góc đánh và lực để giao bóng chính xác"]
     },
     {"tag": "Giao bóng xoáy lên",
      "patterns": ["Giao bóng xoáy lên như thế nào",
@@ -157,7 +157,7 @@
      "tập giao bóng xoáy lên hiệu quả",
      "cần thiết khi luyện tập giao bóng xoáy lên",
      "Giao bóng xoáy lên hợp lý"],
-     "responses": []
+     "responses": ["Đánh banh từ dưới lên trên với góc nghiêng, tạo hiệu ứng cho banh bay theo đường xoáy lên cao. Luyện tập góc và lực đánh cho phù hợp."]
     },
     {"tag": "Giao bóng đổi hướng",
      "patterns": ["Giao bóng đổi hướng như thế nào",
@@ -166,7 +166,7 @@
      "tập giao bóng đổi hướng hiệu quả",
      "cần thiết khi luyện tập giao bóng đổi hướng",
      "Giao bóng đổi hướng hợp lý"],
-     "responses": []
+     "responses": ["“Đánh banh theo một hướng nhưng tạo góc lệch khác, khiến đối phương khó đoán hướng banh di chuyển. Luyện tập tốc độ và góc đánh."]
     },
     {"tag": "Các kĩ thuật nâng cao trong tennis",
      "patterns": [
@@ -179,7 +179,7 @@
       "chơi tennis nâng cao",
       "Tập kĩ thuật nâng cao trong tennis"
      ],
-     "responses": []
+     "responses": ["Một số kỹ thuật nâng cao trong tennis bao gồm cú đánh drop shot, lob, passing shot, volley, smash… Để luyện tập các kỹ thuật này, bạn nên tìm hiểu kỹ thuật chuẩn và luyện tập từng thao tác riêng biệt. Sau đó kết hợp cho các đường bóng khác nhau để hoàn thiện kỹ năng."]
     },
     {"tag": "Điểm lưu ý khi tự luyện tập tennis",
      "patterns": ["Những điểm cần chú ý khi luyện tập tennis",
@@ -189,7 +189,7 @@
       "cách tự tập luyện tennis tốt hơn",
       "lưu ý khi tự tập tennis",
       "cách tự luyện tập tennis"],
-     "responses": []
+     "responses": ["Khi tự luyện tập tennis, cần chú ý đến tư thế đứng, cách nắm vợt, khởi động đầy đủ trước khi tập. Nên luyện từng kỹ thuật cơ bản rồi mới kết hợp, đồng thời đảm bảo an toàn cho cơ thể."]
     },{"tag": "Cách luyện thể lực khi chơi tennis",
     "patterns": ["Những điểm cần chú ý khi tập thể lực tennis",
     "chú ý khi tự tập thể lực tennis",
@@ -198,7 +198,7 @@
      "cách tự tập luyện thể lực tennis tốt hơn",
      "lưu ý khi tự tập thể lực tennis",
      "cách tự tập thể lực tennis"],
-    "responses": []
+    "responses": ["Để luyện thể lực tennis tốt có thể chạy bộ nhẹ, vận động liên tục, tập cơ bụng, tập độ bền sức bằng các bài tập cardio như nhảy dây hoặc đạp xe đạp. Nên bổ sung protein sau khi tập để cơ thể phục hồi."]
    },
    {"tag": "Các bài tập cần thiết khi chơi tennis",
      "patterns": ["Những bài tập nào cần thiết khi bắt đầu chơi tennis",
@@ -207,7 +207,7 @@
      " tìm ra các bài tập phù hợp với việc chơi tennis của mình",
     "Các bài tập phù hợp chơi tennis tốt hơn",
     "một số bài tập tennis phù hợp"],
-     "responses": []
+     "responses": ["Một số bài tập cơ bản và cần thiết khi chơi tennis gồm có tập cố định tư thế, đánh bóng chuẩn bị, di chuyển và phản xạ trên sân, tập các cú đánh cơ bản…"]
     },
     {"tag": "Một số kĩ thuật trong tennis",
      "patterns": ["Những kĩ thuật khi chơi tennis",
@@ -219,7 +219,7 @@
      "những kĩ thuật hay áp dụng trong tennis",
      "các kĩ thuật trong tennis"
       ],
-     "responses": []
+     "responses": ["Một số kỹ thuật cơ bản trong tennis bao gồm cú giao bóng, cú đánh trực diện, cú đánh ngược, đánh volley, đánh drop shot, đánh lob…"]
     },
     {"tag": "Cách khắc chế đối thủ trên sân",
      "patterns": ["Có cách nào để khắc chế đối thủ",
@@ -230,7 +230,7 @@
     "phân tích chiến thuật đối phương tennis",
     "Cách khắc chế đối thủ trên sân tennis",
     "tôi muốn tìm ra chiến thuật khắc chế đối phương mạnh trong tennis"],
-     "responses": []
+     "responses": ["Có thể khắc chế đối thủ bằng cách phát hiện và khai thác điểm yếu của họ, áp dụng chiến thuật phản công phù hợp, luôn giữ vợt ở phía trên đầu để kiểm soát đường bóng."]
     },
     {"tag": "Chi phí khi chơi tennis",
      "patterns": ["Chi phí cần chuẩn bị khi bắt đầu chơi tennis",
@@ -240,7 +240,7 @@
     "chi phí khi chơi tennis",
     "các chi phí cần xem xét",
     "chi phí trong tennis"],
-     "responses": []
+     "responses": ["Chi phí bao gồm vợt, quần áo, giày tennis. Để giảm chi phí có thể chọn mua trang thiết bị không quá cao cấp và tự luyện tập tại sân công cộng."]
     },
     {"tag": "Cách tự học tennis hiệu quả",
      "patterns": ["tự học tennis",
@@ -252,7 +252,7 @@
      "tự học tennis khi không có người chỉ dạy",
      "cách tự học tennis hiệu quả",
      "Làm thế nào để tự phát triển khả năng chơi tennis khi không có huấn luyện viên"],
-     "responses": []
+     "responses": ["Có thể xem video hướng dẫn kỹ thuật cơ bản, luyện tập lặp đi lặp lại trước gương, tìm bạn chơi tennis cùng trình độ rồi trao đổi ý kiến"]
     },
     {
     "tag": "Các chiến thuật tennis hiệu quả",
@@ -264,7 +264,7 @@
     "áp dụng chiến thuật để dễ thắng",
     "cách chiến thắng đối thủ trong tennis",
     "các chiến thuật tennis hiệu quả để chiến thắng đối phương"],
-    "responses": ["https://suasantennis.com/vi/news/Thong-tin-huu-ich/chien-thuat-danh-tennis-giup-tang-ty-le-thang-voi-moi-doi-thu-329.html"]
+    "responses": ["Có thể áp dụng chiến thuật làm mệt đối thủ bằng cách đánh bóng kéo dài hoặc phát hiện điểm yếu để tận dụng lợi thế. Hãy tận dụng khả năng lợi thế với những cú đánh ngược làm đối thủ bất ngờ. Hoặc bạn cũng có thể làm người làm chủ khu vực cuối sân, tạo tâm lí hung hăng khiêu khích đối thủ. Bạn cũng có thể kết hợp giao bóng và vô lê làm đổi thủ không kịp trở tay"]
    },
    {
     "tag": "Các chiến thuật tennis đánh đôi ",
@@ -276,7 +276,7 @@
     "chiến thắng đánh đôi cần chú ý",
     "cách chiến thắng đối thủ trong trận đấu đánh đôi",
     "các chiến thuật tennis hiệu quả khi đánh đôi để chiến thắng đối phương"],
-    "responses": ["https://suasantennis.com/vi/news/Thong-tin-huu-ich/chien-thuat-danh-tennis-giup-tang-ty-le-thang-voi-moi-doi-thu-329.html"]
+    "responses": ["Các chiến thuật cơ bản khi đánh  bình thường cũng có thể áp dụng khi đánh đối. Ngoài ra, khi đánh đôi cần phối hợp, che phủ và hỗ trợ đồng đội, phân công trách nhiệm rõ ràng"]
    }
 ],
 

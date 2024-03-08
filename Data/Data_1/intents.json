@@ -1,384 +1,582 @@
-{"intents": [
-    {"tag": "Luật chơi Tennis",
-     "patterns": ["cách chơi tennis", 
-                "luật chơi tennis", "luật chơi chung của tennis", 
+{
+    "intents": [
+        {
+            "tag": "Luật chơi Tennis",
+            "patterns": [
+                "cách chơi tennis",
+                "luật chơi tennis",
+                "luật chơi chung của tennis",
                 "luật chơi chung",
                 "cách chơi đúng luật tennis",
-                "cách chơi chung của tennis"],
-     "responses": ["Một trận quần vợt gồm có điểm, game và set để tính chung cho cả trận. Trong những giải nam lớn như Grand Slam, ai thắng trước 3 set thì thắng trận. Trong mỗi set, ai thắng trước 6 game thì thắng set, nhưng phải hơn đối thủ 2 game. Nếu đến tỉ số 5–5 thì sẽ chơi tiếp đến khi 1 đối thủ thắng nhiều hơn đối thủ kia 2 game để quyết định người thắng set đó. Lưu ý: Nếu tỉ số hiệp là 7–6 thì set cũng kết thúc (nhưng không phải là set cuối cùng khi trước đó cả hai đã hòa 1–1 hay 2–2 tùy theo set của trận đấu) Trong mỗi game tính điểm như sau: không (0), 15, 30, 40 và thắng game. Nếu tỉ số đạt 40–40, có nghĩa là lợi đều (deuce) thì thi đấu tiếp đến khi 1 đối thủ ghi nhiều hơn đối phương 2 điểm."]
-    },
-    {"tag": "Định nghĩa Tennis",
-     "patterns": ["giải thích về tennis",
-                "liên quan đến môn thể thao tennis ", 
-                "Môn thể thao tennis có nghĩa là gì", 
-                "giải thích về tennis", 
-                "tennis là gì"],
-     "responses": ["Quần vợt (Tiếng Anh: Tennis) là môn thể thao chơi giữa hai người (đánh đơn) hay hai đội trong đó mỗi đội hai người (đánh đôi). Người chơi sử dụng vợt lưới để đánh một quả bóng làm bằng cao su bọc nỉ rỗng gọi là bóng quần vợt về phía sân đối phương. Quần vợt hiện nay là một môn thể thao rất phổ biến ở nhiều nước và được thi đấu tại các kỳ Thế vận hội. Trên thế giới có hàng triệu người chơi quần vợt và hàng triệu"]
-    },
-    {"tag": "Lịch sử tennis",
-     "patterns": ["Lịch sử của môn tennis", 
-                "nguồn gốc của tennis", 
-                "nguồn gốc của tennis", 
-                "Lịch sử tennis", 
-                "lịch sử phát triển", 
-                "năm ra đời", 
-                "ra đời từ khi nào"],
-     "responses": ["nhiều chuyên gia tin rằng năm 1873, một thiếu tá quân đội Anh tên là Walter Clopton Wingfield đã phát minh ra bộ môn này. Lúc đó người Anh gọi trò chơi này là 'quần vợt trên sân cỏ'. Ông Wingfield gọi trò chơi này là Sphairistiké và nói rằng ông đã dựa trên một trò chơi cổ xưa của người Hy Lạp.Người Anh mang trò chơi sang đảo Bermuda năm 1873, và từ Bermuda nó được đem sang Mỹ năm 1874 và chơi ở Đảo Staten, New York. Như nhiều môn thể thao khác của người Anh, họ đã đem truyền bá chúng đi khắp các thuộc địa của họ trên thế giới làm cho bộ môn này phổ biến nhanh chóng.Trò thể thao Jeu de paume của Pháp cũng được coi là tiền thân của quần vợt ngày nay."]
-    },
-    {"tag": "Các thiết bị trong tennis",
-     "patterns": ["Cần những thiết bị gì", 
-                "Các dụng cụ cần có khi tham gia", 
-                "Các trang bị chính", 
+                "cách chơi chung của tennis"
+            ],
+            "responses": [
+                "Một trận quần vợt gồm có điểm, game và set để tính chung cho cả trận. Trong những giải nam lớn như Grand Slam, ai thắng trước 3 set thì thắng trận. Trong mỗi set, ai thắng trước 6 game thì thắng set, nhưng phải hơn đối thủ 2 game. Nếu đến tỉ số 5–5 thì sẽ chơi tiếp đến khi 1 đối thủ thắng nhiều hơn đối thủ kia 2 game để quyết định người thắng set đó. Lưu ý: Nếu tỉ số hiệp là 7–6 thì set cũng kết thúc (nhưng không phải là set cuối cùng khi trước đó cả hai đã hòa 1–1 hay 2–2 tùy theo set của trận đấu) Trong mỗi game tính điểm như sau: không (0), 15, 30, 40 và thắng game. Nếu tỉ số đạt 40–40, có nghĩa là lợi đều (deuce) thì thi đấu tiếp đến khi 1 đối thủ ghi nhiều hơn đối phương 2 điểm."
+            ]
+        },
+        {
+            "tag": "Định nghĩa Tennis",
+            "patterns": [
+                "giải thích về tennis",
+                "liên quan đến môn thể thao tennis ",
+                "Môn thể thao tennis có nghĩa là gì",
+                "giải thích về tennis",
+                "tennis là gì"
+            ],
+            "responses": [
+                "Quần vợt (Tiếng Anh: Tennis) là môn thể thao chơi giữa hai người (đánh đơn) hay hai đội trong đó mỗi đội hai người (đánh đôi). Người chơi sử dụng vợt lưới để đánh một quả bóng làm bằng cao su bọc nỉ rỗng gọi là bóng quần vợt về phía sân đối phương. Quần vợt hiện nay là một môn thể thao rất phổ biến ở nhiều nước và được thi đấu tại các kỳ Thế vận hội. Trên thế giới có hàng triệu người chơi quần vợt và hàng triệu"
+            ]
+        },
+        {
+            "tag": "Lịch sử tennis",
+            "patterns": [
+                "Lịch sử của môn tennis",
+                "nguồn gốc của tennis",
+                "nguồn gốc của tennis",
+                "Lịch sử tennis",
+                "lịch sử phát triển",
+                "năm ra đời",
+                "ra đời từ khi nào"
+            ],
+            "responses": [
+                "Nhiều chuyên gia tin rằng năm 1873, một thiếu tá quân đội Anh tên là Walter Clopton Wingfield đã phát minh ra bộ môn này. Lúc đó người Anh gọi trò chơi này là 'quần vợt trên sân cỏ'. Ông Wingfield gọi trò chơi này là Sphairistiké và nói rằng ông đã dựa trên một trò chơi cổ xưa của người Hy Lạp.Người Anh mang trò chơi sang đảo Bermuda năm 1873, và từ Bermuda nó được đem sang Mỹ năm 1874 và chơi ở Đảo Staten, New York. Như nhiều môn thể thao khác của người Anh, họ đã đem truyền bá chúng đi khắp các thuộc địa của họ trên thế giới làm cho bộ môn này phổ biến nhanh chóng.Trò thể thao Jeu de paume của Pháp cũng được coi là tiền thân của quần vợt ngày nay."
+            ]
+        },
+        {
+            "tag": "Các thiết bị trong tennis",
+            "patterns": [
+                "Cần những thiết bị gì",
+                "Các dụng cụ cần có khi tham gia",
+                "Các trang bị chính",
                 "các thiết bị chính khi chơi tennis",
-                "Các thiết bị chính khi chơi tennis"],
-     "responses": ["Bao gồm: bóng quần vợt, vợt và các dụng cụ khác(giày, quần áo thể thao,…Bóng quần vợt tròn làm bằng cao su bao nỉ bên ngoài, bên trong thì rỗng. Thường bóng màu vàng, bóng có đường kính giữa 6,35 và 6,6 cm, nặng giữa 56 và 59,4 g.Vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ."]
-    },
-    {"tag": "trình tự giao bóng trong tennis",
-     "patterns": ["quy tắc cụ thể về trình tự giao bóng",
-                    "trình tự giao bóng",
+                "Các thiết bị chính khi chơi tennis"
+            ],
+            "responses": [
+                "Bao gồm: bóng quần vợt, vợt và các dụng cụ khác(giày, quần áo thể thao,…) Bóng quần vợt tròn làm bằng cao su bao nỉ bên ngoài, bên trong thì rỗng. Thường bóng màu vàng, bóng có đường kính giữa 6,35 và 6,6 cm, nặng giữa 56 và 59,4 g. Vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ."
+            ]
+        },
+        {
+            "tag": "trình tự giao bóng trong tennis",
+            "patterns": [
+                "quy tắc cụ thể về trình tự giao bóng",
+                "trình tự giao bóng",
                 "trình tự giao bóng trong tennis",
                 "trình tự giao bóng trong tennis",
                 "thứ tự giao bóng",
                 "thứ tự giao bóng trong tennis",
-                "thứ tự giao bóng trong tennis"],
-
-     "responses": ["Trình tự giao bóng của tay vợt sẽ lần lượt từ bên phải rồi sang bên trái phần sân của mình và luôn bắt đầu từ bên phải ở mỗi lượt thi đấu. Bóng đã giao phải bay qua lưới và rơi vào ô giao bóng chéo với vị trí đang đứng của người giao bóng hoặc trên các vạch của ô giao bóng trước khi đối thủ đánh trả bóng lại."]
-    },
-    {"tag": "Luật giao bóng lại",
-     "patterns": ["Quy định về giao bóng lại",
+                "thứ tự giao bóng trong tennis"
+            ],
+            "responses": [
+                "Trình tự giao bóng của tay vợt sẽ lần lượt từ bên phải rồi sang bên trái phần sân của mình và luôn bắt đầu từ bên phải ở mỗi lượt thi đấu. Bóng đã giao phải bay qua lưới và rơi vào ô giao bóng chéo với vị trí đang đứng của người giao bóng hoặc trên các vạch của ô giao bóng trước khi đối thủ đánh trả bóng lại."
+            ]
+        },
+        {
+            "tag": "Luật giao bóng lại",
+            "patterns": [
+                "Quy định về giao bóng lại",
                 "Luật giao bóng lại",
                 "Luật giao bóng lại trong tennis",
                 "Luật giao bóng lại trong tennis",
                 "số lần giao bóng lại",
-                "số lần giao bóng lại trong tennis"],
-     "responses": []
-    },
-    {"tag": "luật khiếu nại",
-     "patterns": ["Làm thế nào để khiếu nại trong tennis",
-     "Luật khiếu nại  trong tennis",
-     "Khi nào được khiếu nại trong tennis",
-     "Khiếu nại được áp dụng trong trường hợp nào",
-     "Có bao nhiêu lần khiếu nại thực hiện",
-     "Cách khiếu nại trong tennis",
-     "Cách khiếu nại đúng luật tennis"],
-     "responses": []
-    },
-    {"tag": "Tác dụng của môn tennis",
-     "patterns": ["Tác dụng tích cực của việc chơi tennis là gì",
-     "Chơi tennis có lợi ích gì cho sức khỏe",
-     "Tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần",
-     "Lợi ích của tennis",
-     "Lợi ích môn thể thao tennis",
-     "Tác dụng tích cực của việc chơi tennis là gì",
-     "Chơi tennis có lợi ích gì cho sức khỏe",
-     "tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần"],
-
-     "responses": []
-    },
-    {"tag": "Những người không nên chơi tennis",
-     "patterns": ["Ai không nên tham gia vào môn tennis",
-     "những đối tượng không nên chơi tennis không",
-     "Tennis không phù hợp với ai",
-     "những người không nên chơi tennis",
-     "Ai không nên chơi tennis"],
-     "responses": []
-    },
-    {"tag": "Giày",
-     "patterns": ["Tại sao giày tennis quan trọng trong môn thể thao này",
-     "Giày tennis cần có điểm gì đặc biệt",
-     "Có gợi ý việc chọn giày tennis",
-     "Gợi ý chọn giày tennis",
-     "Tiêu chuẩn giày"],
-     "responses": []
-    },
-    {"tag": "các cơ quan trong tennis",
-     "patterns": ["Các tổ chức quản lý",
+                "số lần giao bóng lại trong tennis"
+            ],
+            "responses": [
+                "Theo Luật tennis cơ bản, những trường hợp sau thì được phép giao bóng lại: Quả giao bóng thứ nhất bị lỗi. Khi đối thủ đỡ bóng chưa sẵn sàng. Bóng được giao chạm phải lưới, cạp lưới hoặc dải băng. "
+            ]
+        },
+        {
+            "tag": "luật khiếu nại",
+            "patterns": [
+                "Làm thế nào để khiếu nại trong tennis",
+                "Luật khiếu nại  trong tennis",
+                "Khi nào được khiếu nại trong tennis",
+                "Khiếu nại được áp dụng trong trường hợp nào",
+                "Có bao nhiêu lần khiếu nại thực hiện",
+                "Cách khiếu nại trong tennis",
+                "Cách khiếu nại đúng luật tennis"
+            ],
+            "responses": [
+                "Trong tennis, người chơi có quyền khiếu nại khi họ tin rằng đã xảy ra vi phạm luật. Mỗi người chơi có một số lần khiếu nại giới hạn theo luật định."
+            ]
+        },
+        {
+            "tag": "Tác dụng của môn tennis",
+            "patterns": [
+                "Tác dụng tích cực của việc chơi tennis là gì",
+                "Chơi tennis có lợi ích gì cho sức khỏe",
+                "Tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần",
+                "Lợi ích của tennis",
+                "Lợi ích môn thể thao tennis",
+                "Tác dụng tích cực của việc chơi tennis là gì",
+                "Chơi tennis có lợi ích gì cho sức khỏe",
+                "tennis ảnh hưởng như thế nào đến sức khỏe và tinh thần"
+            ],
+            "responses": [
+                "Chơi tennis có nhiều lợi ích cho sức khỏe và tinh thần, bao gồm cải thiện sức khỏe tim mạch, tăng cường sức mạnh cơ bắp, cải thiện sự linh hoạt và phản xạ, giúp giảm căng thẳng và stress, cũng như tăng cường tập trung và sự kiên nhẫn."
+            ]
+        },
+        {
+            "tag": "Những người không nên chơi tennis",
+            "patterns": [
+                "Ai không nên tham gia vào môn tennis",
+                "những đối tượng không nên chơi tennis không",
+                "Tennis không phù hợp với ai",
+                "Ai không nên chơi tennis"
+            ],
+            "responses": [
+                "Tennis là một môn thể thao có lợi cho sức khỏe, tuy nhiên, những người có vấn đề sức khỏe đặc biệt như vấn đề về tim mạch, khớp hoặc các chấn thương cần thận trọng khi chơi. Ngoài ra, người mới bắt đầu nên tham khảo ý kiến của bác sĩ trước khi bắt đầu tập luyện intensive."
+            ]
+        },
+        {
+            "tag": "Giày",
+            "patterns": [
+                "Tại sao giày tennis quan trọng trong môn thể thao này",
+                "Giày tennis cần có điểm gì đặc biệt",
+                "Có gợi ý việc chọn giày tennis",
+                "Gợi ý chọn giày tennis",
+                "Tiêu chuẩn giày"
+            ],
+            "responses": [
+                "Giày tennis quan trọng để hỗ trợ đôi chân trong quá trình di chuyển và đánh bóng. Chúng cần có đế đặc biệt, hỗ trợ cổ chân và thoáng khí để người chơi có thể di chuyển linh hoạt trên sân."
+            ]
+        },
+        {
+            "tag": "các cơ quan trong tennis",
+            "patterns": [
+                "Các tổ chức quản lý",
                 "Ai chịu trách nhiệm tổ chức các giải đấu tennis lớn",
                 "Có những tổ chức nào quản lý tennis trên toàn thế giới",
                 "Tổ chức lớn trong tennis",
                 "Các cơ quan chính trong tennis",
-                "Cơ quan lớn tổ chức"],
-     "responses": []
-    },
-    {"tag": "chấn thương hay gặp",
-     "patterns": ["Các loại chấn thương phổ biến trong tennis",
-     "Cách để tránh chấn thương khi chơi tennis",
-     "Những nguy cơ chấn thương  khi chơi tennis",
-    "chấn thương hay gặp trong tennis",
-    "loại chấn thương mắc phải"],
-     "responses": []
-    },
-    {"tag": "Điểm trong set đấu tennis",
-     "patterns": ["cách tính điểm", 
-     "điểm số", 
-     "điểm số tennis",
-    "điểm số trong set đấu tennis",
-    "tính điểm trong hiệp",
-    "tính điểm trong trận đấu",
-    "tính điểm tennis"],
-     "responses": []
-    },
-    {"tag": "Vợt",
-     "patterns": [ "vợt tennis", 
-            "tiêu chuẩn vợt", 
-            "tiêu chuẩn vợt tennis"],
-     "responses": ["vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ. Mặt vợt được căng bằng dây ni lông hoặc dây ruột bò. Ngày nay có nhiều loại dây mới gọi là dây nilông tổng hợp."]
-    },
-    {"tag": "bóng",
-     "patterns": ["bóng tennis", 
-                "tiêu chuẩn bóng tennis", 
-                "bóng tennis", 
+                "Cơ quan lớn tổ chức"
+            ],
+            "responses": [
+                "Các tổ chức quản lý quần vợt lớn nhất là Liên đoàn Quần vợt Quốc tế (International Tennis Federation - ITF) cùng với các tổ chức lớn như Hiệp hội Quần vợt Nữ (WTA) và Hiệp hội Quần vợt Nam (ATP) quản lý các giải đấu lớn và hệ thống xếp hạng."
+            ]
+        },
+        {
+            "tag": "chấn thương hay gặp",
+            "patterns": [
+                "Các loại chấn thương phổ biến trong tennis",
+                "Cách để tránh chấn thương khi chơi tennis",
+                "Những nguy cơ chấn thương  khi chơi tennis",
+                "chấn thương hay gặp trong tennis",
+                "loại chấn thương mắc phải"
+            ],
+            "responses": [
+                "Trong tennis, những chấn thương phổ biến bao gồm chấn thương cổ tay, cánh tay, vai, hoặc chấn thương đầu gối do tác động từ việc di chuyển nhanh, xoay người và đánh bóng."
+            ]
+        },
+        {
+            "tag": "Điểm trong set đấu tennis",
+            "patterns": [
+                "cách tính điểm",
+                "điểm số",
+                "điểm số tennis",
+                "điểm số trong set đấu tennis",
+                "tính điểm trong hiệp",
+                "tính điểm trong trận đấu",
+                "tính điểm tennis"
+            ],
+            "responses": [
+                "Trong một trận đấu tennis, điểm được tính là 0, 15, 30, 40 và thắng game. Nếu điểm đạt 40-40, tức lợi đều (deuce), trận đấu sẽ tiếp tục cho đến khi một người chơi có lợi thế hơn đối thủ 2 điểm."
+            ]
+        },
+        {
+            "tag": "Vợt",
+            "patterns": [
+                "vợt tennis",
+                "tiêu chuẩn vợt",
+                "tiêu chuẩn vợt tennis"
+            ],
+            "responses": [
+                "Vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ. Mặt vợt được căng bằng dây ni lông hoặc dây ruột bò. Ngày nay có nhiều loại dây mới gọi là dây nilông tổng hợp."
+            ]
+        },
+        {
+            "tag": "bóng",
+            "patterns": [
+                "bóng tennis",
+                "tiêu chuẩn bóng tennis",
+                "bóng tennis",
                 "Quả tennis được làm bằng vật liệu",
                 "tiêu chuẩn vật liệu bóng",
                 "kích cỡ quả bóng tennis",
-                "kích thước chuẩn bóng"],
-     "responses": []
-    },
-    {"tag": "Sân",
-     "patterns": ["tiêu chuẩn sân thi đấu",
-             "sân tennis chuẩn",
-              "tiêu chuẩn sân thi đấu tennis",
-               "sân thi đấu tennis"],
-     "responses": []
-    },
-    {"tag": "Giao bóng",
-     "patterns": ["cách giao bóng hợp lệ", 
-                    "giao bóng", 
-                    "luật giao bóng tennis", 
-                    "luật giao bóng tennis"],
-     "responses": []
-    },
-    {"tag": "lỗi giao bóng",
-     "patterns": ["giao bóng không hợp lệ", 
-                "lỗi giao bóng", 
-                "lỗi giao bóng tennis",  
-                "lỗi giao bóng tennis"],
-     "responses": []
-    },
-    {"tag": "tie-break",
-     "patterns": ["luật tie-break tennis", 
-            "luật tie-break tennis",
-            "tie-break là gì",
-            "Khi set đấu kết thúc với tỷ số 6-6",
-            "Khi hòa nhau tỷ số 6-6",
-            "nếu hòa nhau chung cuộc 6 đều",
-            "tie-break áp dụng thế nào nếu hai đối thủ hòa nhau 6-6"],
-     "responses": []
-    },
-    {"tag": "luật đánh đơn",
-     "patterns": ["luật đánh đơn tennis", "luật chơi đánh đơn", "luật lệ khi chơi đánh đơn tennis", "luật đánh đơn tennis"],
-     "responses": []
-    },
-    {"tag": "luật đánh đôi",
-     "patterns": ["luật đánh đôi tennis", "luật chơi đánh đôi", "luật lệ khi chơi đánh đôi tennis", "luật đánh đôi tennis"],
-     "responses": []
-    },
-    
-    {"tag": "lưới",
-     "patterns": ["lưới tennis", "lưới tennis", "tiêu chuẩn lưới", "ý nghĩa lưới", "lưới để làm gì"],
-     "responses": []
-    },
-    {"tag": "trọng tài",
-     "patterns": ["trọng tài tennis", "quyền hạn trọng tài", "quyết định trọng tài", "ý nghĩa trọng tài tennis",
-                "vai trò trọng tài tennis", "trọng tài trong môn tennis"],
-     "responses": []
-    },
-    {"tag": "số set tennis",
-     "patterns": ["tennis có mấy set", 
-                "số set trong một trận đấu", 
-                "số set đấu", 
+                "kích thước chuẩn bóng"
+            ],
+            "responses": [
+                "Bóng tennis được làm bằng cao su bọc nỉ, có kích thước và trọng lượng chuẩn. Thông thường, bóng có đường kính từ 6,35 đến 6,6 cm và trọng lượng từ 56 đến 59,4 g."
+            ]
+        },
+        {
+            "tag": "Sân",
+            "patterns": [
+                "tiêu chuẩn sân thi đấu",
+                "sân tennis chuẩn",
+                "tiêu chuẩn sân thi đấu tennis",
+                "sân thi đấu tennis"
+            ],
+            "responses": [
+                "Sân thi đấu tennis có tiêu chuẩn về kích thước và đánh dấu rõ ràng. Sân đơn có kích thước rộng 8,23 m và dài 23,77 m. Sân đôi rộng hơn với chiều rộng 10,97 m."
+            ]
+        },
+        {
+            "tag": "Giao bóng",
+            "patterns": [
+                "cách giao bóng hợp lệ",
+                "giao bóng",
+                "luật giao bóng tennis",
+                "luật giao bóng tennis"
+            ],
+            "responses": [
+                "Cách giao bóng hợp lệ: Trong tennis, giao bóng phải được thực hiện từ một trong hai đầu sân và phải vượt qua vạch net vào phần đối diện của đối thủ mà không được chạm vạch biên. Người giao bóng phải đứng ở nơi giao bóng phù hợp trên đường phân cách, giao bóng phải được thực hiện trong khoảng thời gian hợp lý và theo quy định."
+            ]
+        },
+        {
+            "tag": "lỗi giao bóng",
+            "patterns": [
+                "giao bóng không hợp lệ",
+                "lỗi giao bóng",
+                "lỗi giao bóng tennis",
+                "lỗi giao bóng tennis"
+            ],
+            "responses": [
+                "Lỗi giao bóng xảy ra khi người giao bóng vi phạm các quy định về cách giao bóng hợp lệ. Các lỗi này có thể bao gồm: giao bóng không vượt qua vạch net, chạm vào vạch biên, hoặc vi phạm các quy tắc cụ thể khác về cách giao bóng."
+            ]
+        },
+        {
+            "tag": "tie-break",
+            "patterns": [
+                "luật tie-break tennis",
+                "luật tie-break tennis",
+                "tie-break là gì",
+                "Khi set đấu kết thúc với tỷ số 6-6",
+                "Khi hòa nhau tỷ số 6-6",
+                "nếu hòa nhau chung cuộc 6 đều",
+                "tie-break áp dụng thế nào nếu hai đối thủ hòa nhau 6-6"
+            ],
+            "responses": [
+                "Tie-break trong tennis áp dụng khi set đấu kết thúc với tỷ số 6-6. Trong tie-break, người chơi sẽ thi đấu để xác định người chiến thắng set đó với quy định điểm số cụ thể và luân phiên giao bóng."
+            ]
+        },
+        {
+            "tag": "luật đánh đơn",
+            "patterns": [
+                "luật đánh đơn tennis",
+                "luật chơi đánh đơn",
+                "luật lệ khi chơi đánh đơn tennis",
+                "luật đánh đơn tennis"
+            ],
+            "responses": [
+                "Luật đánh đơn tennis bao gồm các quy định về cách thi đấu khi chỉ có một người chơi ở mỗi bên sân. Trận đấu diễn ra giữa hai người chơi và phải tuân theo các quy tắc cụ thể cho trường hợp này."
+            ]
+        },
+        {
+            "tag": "luật đánh đôi",
+            "patterns": [
+                "luật đánh đôi tennis",
+                "luật chơi đánh đôi",
+                "luật lệ khi chơi đánh đôi tennis",
+                "luật đánh đôi tennis"
+            ],
+            "responses": [
+                "Luật đánh đôi tennis áp dụng cho trận đấu khi có hai cặp vận động viên thi đấu cùng một lúc, mỗi cặp gồm hai người chơi. Luật này có những quy định riêng biệt về cách thi đấu so với đánh đơn."
+            ]
+        },
+        {
+            "tag": "lưới",
+            "patterns": [
+                "lưới tennis",
+                "lưới tennis",
+                "tiêu chuẩn lưới",
+                "ý nghĩa lưới",
+                "lưới để làm gì"
+            ],
+            "responses": [
+                "Lưới trong tennis là phần phân chia sân thành hai mảnh và nằm ngang giữa sân. Nó được sử dụng để phân chia hai phần sân của hai đối thủ và phải có độ cao chuẩn để ngăn chặn bóng khi giao bóng hoặc trong quá trình thi đấu."
+            ]
+        },
+        {
+            "tag": "trọng tài",
+            "patterns": [
+                "trọng tài tennis",
+                "quyền hạn trọng tài",
+                "quyết định trọng tài",
+                "ý nghĩa trọng tài tennis",
+                "vai trò trọng tài tennis",
+                "trọng tài trong môn tennis"
+            ],
+            "responses": [
+                "Trọng tài trong tennis có vai trò giám sát và quyết định các vấn đề liên quan đến luật lệ, đánh điểm và quyết định cuối cùng trong trận đấu. Họ đảm bảo tính công bằng và tuân thủ luật lệ trong mỗi trận đấu."
+            ]
+        },
+        {
+            "tag": "số set tennis",
+            "patterns": [
+                "tennis có mấy set",
+                "số set trong một trận đấu",
+                "số set đấu",
                 "bao nhiêu set đấu trong một trận",
                 "mấy set đấu một trận",
                 "có bao nhiêu set đấu trong một trận đấu tennis"
-    ],
-     "responses": []
-    },
-    {"tag": "số set tennis",
-     "patterns": ["tennis có mấy set", 
-                "số set trong một trận đấu", 
-                "số set đấu", 
+            ],
+            "responses": [
+                "Trong tennis, số set đấu một trận thường khác nhau tùy theo quy định của từng giải đấu. Thông thường, một trận đấu có thể gồm ba hoặc năm set và người chiến thắng được xác định sau khi đạt số set thắng quy định."
+            ]
+        },
+        {
+            "tag": "số set tennis",
+            "patterns": [
+                "tennis có mấy set",
+                "số set trong một trận đấu",
+                "số set đấu",
                 "bao nhiêu set đấu trong một trận",
                 "mấy set đấu một trận",
                 "có bao nhiêu set đấu trong một trận đấu tennis"
-    ],
-     "responses": []
-    },
-    {"tag": "chiến thắng trong tennis",
-     "patterns": ["cách xác định người chiến thắng tennis",
-     "xác định người thắng",
-     "người nào chiến thắng",
-     "ai thắng trận đấu trong tennis",
-     "người thua cuộc trong tennis",
-     "xác định người thua tennis",
-    "ai thua trong trận đấu tennis",
-    "cách biết ai thua trong tennis",
-     "cách tìm người thắng",
-     "cách xác định người thua"
-    ],
-     "responses": []
-    },
-    {"tag": "chơi tennis ở đâu",
-     "patterns": ["thường chơi tennis ở đâu", 
-                "địa điểm chơi tennis", 
-                "chỗ chơi tennis", 
+            ],
+            "responses": [
+                "Trong tennis, người chiến thắng được xác định bằng cách đạt điều kiện chiến thắng như quy định của từng trận đấu. Người chiến thắng là người có số set hoặc số điểm quy định theo luật lệ hoặc đạt điều kiện chiến thắng quy định."
+            ]
+        },
+        {
+            "tag": "chiến thắng trong tennis",
+            "patterns": [
+                "cách xác định người chiến thắng tennis",
+                "xác định người thắng",
+                "người nào chiến thắng",
+                "ai thắng trận đấu trong tennis",
+                "người thua cuộc trong tennis",
+                "xác định người thua tennis",
+                "ai thua trong trận đấu tennis",
+                "cách biết ai thua trong tennis",
+                "cách tìm người thắng",
+                "cách xác định người thua"
+            ],
+            "responses": [
+                "Trong tennis, người chiến thắng được xác định bằng cách đạt điều kiện chiến thắng như quy định của từng trận đấu. Người chiến thắng là người có số set hoặc số điểm quy định theo luật lệ hoặc đạt điều kiện chiến thắng quy định."
+            ]
+        },
+        {
+            "tag": "chơi tennis ở đâu",
+            "patterns": [
+                "thường chơi tennis ở đâu",
+                "địa điểm chơi tennis",
+                "chỗ chơi tennis",
                 "nơi chơi tennis",
                 "tìm chỗ chơi tennis"
-    ],
-     "responses": []
-    },
-    {"tag": "Nguồn gốc cái tên tennis",
-     "patterns": ["cái tên tennis xuất phát từ đâu", 
-                "nguồn gốc cái tên tennis", 
-                "tại sao gọi là tennis", 
+            ],
+            "responses": [
+                "Có rất nhiều địa điểm khác nhau để chơi tennis, từ các sân tennis công cộng đến các club tennis, khu vực thể dục hoặc các khu chơi tennis tư nhân. Một số sân tập tennis nổi tiếng thường được tìm thấy tại các club hoặc khu vực thể thao."
+            ]
+        },
+        {
+            "tag": "Nguồn gốc cái tên tennis",
+            "patterns": [
+                "cái tên tennis xuất phát từ đâu",
+                "nguồn gốc cái tên tennis",
+                "tại sao gọi là tennis",
                 "lịch sử cái tên",
                 "đặt tên môn thể thao",
                 "đặt tên tennis",
                 "lịch sử và nguồn gốc của cái tên tennis"
-    ],
-     "responses": []
-    },
-    {"tag": "Những cái tên nổi tiếng trong tennis",
-     "patterns": ["những tay vợt nổi tiếng nhất trong lịch sử tennis",
-     " những tên tuổi được xem là huyền thoại trong làng tennis",
-     "Danh sách những tay vợt có tên tuổi và ảnh hưởng lớn đến tennis",
-     "Những tên tuổi đáng chú ý nhất",
-     "những vận động viên được coi là các huyền thoại, người mẫu mực"],
-     "responses": []
-    },
-    {
-    "tag": "Điểm số Love trong tennis",
-    "patterns": ["Điểm số love",
+            ],
+            "responses": [
+                "Nguồn gốc của cái tên 'tennis' không hoàn toàn rõ ràng, nhưng có lẽ từ nguyên tắc giao bóng trong trò chơi 'Jeu de Paume' (một trò chơi bắt đầu từ thế kỷ 12 ở Pháp), nơi người chơi sử dụng tay để đưa bóng qua một phần cứng (bao gồm cả các vật liệu dạng lưới). Thuật ngữ 'tennis' có thể xuất phát từ từ 'tenez' trong tiếng Pháp, có nghĩa là 'nhận' hoặc 'đây này' khi giao bóng."
+            ]
+        },
+        {
+            "tag": "Những cái tên nổi tiếng trong tennis",
+            "patterns": [
+                "những tay vợt nổi tiếng nhất trong lịch sử tennis",
+                " những tên tuổi được xem là huyền thoại trong làng tennis",
+                "Danh sách những tay vợt có tên tuổi và ảnh hưởng lớn đến tennis",
+                "Những tên tuổi đáng chú ý nhất",
+                "những vận động viên được coi là các huyền thoại, người mẫu mực"
+            ],
+            "responses": [
+                "Có nhiều tên tuổi nổi tiếng trong lịch sử tennis như Roger Federer, Rafael Nadal, Novak Djokovic, Serena Williams, Steffi Graf, Martina Navratilova, và nhiều tên tuổi khác. Các vận động viên này đã để lại dấu ấn lớn trong làng tennis thông qua thành tích và ảnh hưởng của họ."
+            ]
+        },
+        {
+            "tag": "Điểm số Love trong tennis",
+            "patterns": [
+                "Điểm số love",
                 "love trong tennis",
                 "love trong tennis là gì",
                 "love-15 trong tennis là gì",
                 "love-30 trong tennis",
-                "điểm số love tennis"],
-    "responses": []
-    },
-    {
-        "tag": "Thời gian nghỉ giữa các set",
-        "patterns": ["Thời gian nghỉ giữa các set trong tennis",
-        "Có quy định cụ thể về thời gian nghỉ giữa các set",
-        "Người chơi được phép nghỉ bao lâu giữa các set trong một trận đấu tennis",
-        "thời gian người chơi nghĩ giữa các set",
-        "thời gian nghỉ giữa các set",
-        "Thời gian nghỉ giữa set thường được kiểm soát như thế nào",
-        "quy tắc về thời gian nghỉ giữa các set ở các giải đấu tennis",
-        "thời gian nghỉ giữa các set tennis"],
-        "responses": []
-    },
-    {
-        "tag": "Điểm khác biệt giữa đánh đôi và đánh đơn",
-        "patterns": ["Điểm khác nhau giữa đánh đôi và đánh đơn trong tennis",
-        "khác biệt giữa đánh đôi và đánh đơn không",
-        "sự khác nhau giữa việc chơi đánh đôi và đánh đơn trong tennis",
-        "có điểm khác biệt giữa việc thi đấu đánh đôi và đánh đơn",
-        "những sự khác nhau trong đánh đôi và đánh đơn",
-        "sự giống và khác của đánh đôi và đánh đơn",
-        "đánh đôi và đánh đơn giống nhau và khác nhau",
-        "phân biệt đánh đôi và đánh đơn",
-        "đánh đôi và đánh đơn khác nhau",
-        "điểm khác biệt giữa đánh đơn và đánh đôi"],
-        "responses": []
-    },
-
-    {"tag": "ý nghĩa vạch biên tennis",
-     "patterns": ["vạch biên quan trọng trong tennis",
-     "Vạch biên có ý nghĩa trong quy tắc của tennis",
-     "Luật và vai trò của vạch biên trong trận đấu tennis",
-     "ý nghĩa vạch biên tennis",
-     "vai trò vạch biên",
-     "tác dụng của vạch trong tennis",
-     "luật chạm vạch tennis",
-     "vạch biên trong tennis có tác dụng",
-     "Vạch biên trong tennis"],
-     "responses": ["Luật Tennis tại Anh"]
-    },
-
-    {
-        "tag": "sân đất nhện",
-        "patterns": ["Sân đất nhện trong tennis là gì",
-        "Đặc điểm và đặc tính của sân đất nhện",
-        "sân đất nhện được sử dụng trong môn tennis",
-        "Cách chơi trên sân đất nhện so với các loại sân",
-        "Sân đất nhện trong tennis",
-        "sân đất nhện",
-        "sân tennis đất nhện"],
-        "responses": []
-    },
-    {
-        "tag": "sân cứng",
-        "patterns": ["Đặc điểm của sân cứng trong tennis là gì",
-        "Sân cứng có ảnh hưởng như thế nào đến cách chơi tennis",
-        "Tại sao người chơi thường chọn sân cứng",
-        "sân cứng tennis khác gì các loại sân",
-        "đặc điểm sân cứng",
-        "Có những điểm gì cần lưu ý khi thi đấu trên sân cứng"],
-        "responses": []
-    },
-    {
-        "tag": "sân cỏ",
-        "patterns": ["Sân cỏ trong tennis có điểm đặc biệt",
-        "Tại sao chọn sân cỏ làm sân thi đấu",
-        "sân cỏ trong tennis",
-        "sân cỏ tennis so với các loại sân",
-        "đặc điểm sân cỏ tennis",
-        "Lợi ích và khó khăn khi thi đấu trên sân cỏ so với các loại sân khác",
-        "Những điều phù hợp hơn khi chơi trên sân cỏ"],
-        "responses": []
-    },
-    {
-        "tag": "khác biệt giữa ba sân",
-        "patterns": ["Sự khác biệt chính giữa sân đất nhện, sân cứng và sân cỏ",
-        "Phân biệt các sân thi đấu tennis",
-        "Các loại sân tennis có sự khác nhau",
-        "Phân biệt sân đất nhện, sân cứng và sân cỏ",
-        "Các loại sân thi đấu tennis khác nhau",
-        "khác biệt giữa ba loại sân chính",
-        "các loại sân trong tennis",
-        "Các tay vợt thi đấu trên ba loại sân"],
-        "responses": []
-    },
-    {
-        "tag": "huấn luyện viên trong tennis",
-        "patterns": ["Vai trò và chức năng của huấn luyện viên trong tennis",
-        "Đặc điểm cần có của một huấn luyện viên tennis giỏi",
-        "Tầm quan trọng của huấn luyện viên",
-        "huấn luyện viên trong tennis",
-        "vai trò của huấn luyện viên",
-        "Cách huấn luyện viên giúp cải thiện kỹ thuật và chiến thuật cho tay vợt"],
-        "responses": []
-    },
-    {
-        "tag": "đổi sân trong tennis",
-        "patterns": ["Khi nào người chơi cần phải đổi sân trong trận đấu tennis",
-        "Quy tắc và quá trình đổi sân trong một trận tennis",
-        "Có quy định cụ thể nào việc đổi sân khi thi đấu tennis",
-        "Điểm lưu ý khi tay vợt phải thực hiện việc đổi sân",
-        "lưu ý khi đổi sân trong tennis",
-        "đổi sân trong tennis"],
-        "responses": []
-    },
-    {
-        "tag": "quá trình diễn ra một trận tennis",
-        "patterns": ["Các bước và quy trình diễn ra một trận đấu tennis",
-        "quá trình diễn ra một trận đấu tennis",
-        "Quy tắc và quy trình từng set và từng game trong một trận tennis",
-        "quá trình một trận đấu tennis diễn ra",
-        "Nguyên tắc và luật lệ quy định cho từng giai đoạn trong một trận đấu tennis",
-        "các giai đoạn của trận đấu tennis",
-        "quá trình diễn ra một trận đấu tennis"],
-        "responses": []
-    },
-    {
-        "tag": "người nhặt bóng trong tennis",
-        "patterns": ["nhặt bóng trong tennis",
-                    "các cậu bé nhặt bóng trong tennis",
-                    "ballboy trong tennis",
-                    "người nhặt bóng",
-                    "nhặt bóng tennis"],
-        "responses": []
-    }
-],
-"tag": "Luật chơi và các thông tin cơ bản về tennis"
+                "điểm số love tennis"
+            ],
+            "responses": [
+                "'Love' trong tennis đề cập đến điểm số 0. Thuật ngữ này có nguồn gốc từ cụm từ tiếng Pháp 'l'oeuf', có nghĩa là 'quả trứng', tương ứng với hình dáng của số 0 và cũng có thể đề cập đến việc không có điểm nào trên bảng điểm."
+            ]
+        },
+        {
+            "tag": "Thời gian nghỉ giữa các set",
+            "patterns": [
+                "Thời gian nghỉ giữa các set trong tennis",
+                "Có quy định cụ thể về thời gian nghỉ giữa các set",
+                "Người chơi được phép nghỉ bao lâu giữa các set trong một trận đấu tennis",
+                "thời gian người chơi nghĩ giữa các set",
+                "thời gian nghỉ giữa các set",
+                "Thời gian nghỉ giữa set thường được kiểm soát như thế nào",
+                "quy tắc về thời gian nghỉ giữa các set ở các giải đấu tennis",
+                "thời gian nghỉ giữa các set tennis"
+            ],
+            "responses": [
+                "Thời gian nghỉ giữa các set trong tennis thường là 90 giây hoặc 120 giây. Thời gian này được sử dụng để người chơi nghỉ ngơi, hydrat hóa và chuẩn bị cho set tiếp theo."
+            ]
+        },
+        {
+            "tag": "Điểm khác biệt giữa đánh đôi và đánh đơn",
+            "patterns": [
+                "Điểm khác nhau giữa đánh đôi và đánh đơn trong tennis",
+                "khác biệt giữa đánh đôi và đánh đơn không",
+                "sự khác nhau giữa việc chơi đánh đôi và đánh đơn trong tennis",
+                "có điểm khác biệt giữa việc thi đấu đánh đôi và đánh đơn",
+                "những sự khác nhau trong đánh đôi và đánh đơn",
+                "sự giống và khác của đánh đôi và đánh đơn",
+                "đánh đôi và đánh đơn giống nhau và khác nhau",
+                "phân biệt đánh đôi và đánh đơn",
+                "đánh đôi và đánh đơn khác nhau",
+                "điểm khác biệt giữa đánh đơn và đánh đôi"
+            ],
+            "responses": [
+                "Có nhiều điểm khác biệt giữa đánh đôi và đánh đơn trong tennis, bao gồm cách thi đấu, chiến thuật, vị trí trên sân và quy định đánh bóng. Đánh đôi thường có sự hợp tác giữa hai người chơi trong khi đánh đơn tập trung vào một người chơi."
+            ]
+        },
+        {
+            "tag": "ý nghĩa vạch biên tennis",
+            "patterns": [
+                "vạch biên quan trọng trong tennis",
+                "Vạch biên có ý nghĩa trong quy tắc của tennis",
+                "Luật và vai trò của vạch biên trong trận đấu tennis",
+                "ý nghĩa vạch biên tennis",
+                "vai trò vạch biên",
+                "tác dụng của vạch trong tennis",
+                "luật chạm vạch tennis",
+                "vạch biên trong tennis có tác dụng",
+                "Vạch biên trong tennis"
+            ],
+            "responses": [
+                "Vạch biên trong tennis đóng vai trò quan trọng trong việc xác định không gian chơi và quy định quy tắc của trò chơi. Chúng giúp xác định xem quả bóng có nằm trong hoặc ngoài biên sân. Sự chính xác của vạch biên đóng vai trò quyết định trong việc quyết định điểm số và kết quả của mỗi điểm chơi."
+            ]
+        },
+        {
+            "tag": "sân đất nhện",
+            "patterns": [
+                "Sân đất nhện trong tennis là gì",
+                "Đặc điểm và đặc tính của sân đất nhện",
+                "sân đất nhện được sử dụng trong môn tennis",
+                "Cách chơi trên sân đất nhện so với các loại sân",
+                "Sân đất nhện trong tennis",
+                "sân đất nhện",
+                "sân tennis đất nhện"
+            ],
+            "responses": [
+                "Sân đất nhện trong tennis là một loại sân phủ bằng đất sét. Đặc điểm của sân này là bề mặt mịn, thô ráp và có độ đàn hồi tốt. Sân đất nhện thường yêu cầu phong cách chơi với nhiều đổi hướng, nhảy nhót và ưa thích cho các tay vợt thích chơi phong cách phòng ngự."
+            ]
+        },
+        {
+            "tag": "sân cứng",
+            "patterns": [
+                "Đặc điểm của sân cứng trong tennis là gì",
+                "Sân cứng có ảnh hưởng như thế nào đến cách chơi tennis",
+                "Tại sao người chơi thường chọn sân cứng",
+                "sân cứng tennis khác gì các loại sân",
+                "đặc điểm sân cứng",
+                "Có những điểm gì cần lưu ý khi thi đấu trên sân cứng"
+            ],
+            "responses": [
+                "Sân cứng trong tennis là loại sân có bề mặt cứng, thường được làm từ lớp acrylic hoặc đá granite. Đây là loại sân phổ biến trong các giải đấu lớn và thường tạo điều kiện cho bóng di chuyển nhanh và dễ dàng dự đoán hướng bóng."
+            ]
+        },
+        {
+            "tag": "sân cỏ",
+            "patterns": [
+                "Sân cỏ trong tennis có điểm đặc biệt",
+                "Tại sao chọn sân cỏ làm sân thi đấu",
+                "sân cỏ trong tennis",
+                "sân cỏ tennis so với các loại sân",
+                "đặc điểm sân cỏ tennis",
+                "Lợi ích và khó khăn khi thi đấu trên sân cỏ so với các loại sân khác",
+                "Những điều phù hợp hơn khi chơi trên sân cỏ"
+            ],
+            "responses": [
+                "Sân cỏ trong tennis là loại sân có bề mặt mềm và xốp, thường được làm từ cỏ nhân tạo hoặc tự nhiên. Sân cỏ tạo điều kiện cho bóng di chuyển nhanh và không đều, đặc biệt thuận lợi cho việc chơi tấn công với các cú giao bóng và volley."
+            ]
+        },
+        {
+            "tag": "khác biệt giữa ba sân",
+            "patterns": [
+                "Sự khác biệt chính giữa sân đất nhện, sân cứng và sân cỏ",
+                "Phân biệt các sân thi đấu tennis",
+                "Các loại sân tennis có sự khác nhau",
+                "Phân biệt sân đất nhện, sân cứng và sân cỏ",
+                "Các loại sân thi đấu tennis khác nhau",
+                "khác biệt giữa ba loại sân chính",
+                "các loại sân trong tennis",
+                "Các tay vợt thi đấu trên ba loại sân"
+            ],
+            "responses": [
+                "Ba loại sân chính trong tennis (sân đất nhện, sân cứng và sân cỏ) có những đặc điểm khác biệt về bề mặt, độ đàn hồi và tốc độ di chuyển của quả bóng. Sự khác biệt này ảnh hưởng đến chiến thuật và phong cách chơi của các vận động viên khi họ thi đấu trên các loại sân này."
+            ]
+        },
+        {
+            "tag": "huấn luyện viên trong tennis",
+            "patterns": [
+                "Vai trò và chức năng của huấn luyện viên trong tennis",
+                "Đặc điểm cần có của một huấn luyện viên tennis giỏi",
+                "Tầm quan trọng của huấn luyện viên",
+                "huấn luyện viên trong tennis",
+                "vai trò của huấn luyện viên",
+                "Cách huấn luyện viên giúp cải thiện kỹ thuật và chiến thuật cho tay vợt"
+            ],
+            "responses": [
+                "Huấn luyện viên trong tennis đóng vai trò quan trọng trong việc phát triển kỹ thuật, chiến thuật và tư duy cho các tay vợt. Họ giúp vận động viên cải thiện kỹ năng cá nhân, chuẩn bị tinh thần và định hình chiến thuật phù hợp cho từng trận đấu."
+            ]
+        },
+        {
+            "tag": "đổi sân trong tennis",
+            "patterns": [
+                "Khi nào người chơi cần phải đổi sân trong trận đấu tennis",
+                "Quy tắc và quá trình đổi sân trong một trận tennis",
+                "Có quy định cụ thể nào việc đổi sân khi thi đấu tennis",
+                "Điểm lưu ý khi tay vợt phải thực hiện việc đổi sân",
+                "lưu ý khi đổi sân trong tennis",
+                "đổi sân trong tennis"
+            ],
+            "responses": [
+                "Người chơi sẽ đổi sân sau mỗi set trong trận đấu tennis. Quy trình đổi sân thường bao gồm một thời gian ngắn nghỉ ngơi và chuẩn bị trước khi bắt đầu set tiếp theo. Điều này cho phép họ tái lập tư duy và năng lượng trước khi tiếp tục."
+            ]
+        },
+        {
+            "tag": "quá trình diễn ra một trận tennis",
+            "patterns": [
+                "Các bước và quy trình diễn ra một trận đấu tennis",
+                "Quy tắc và quy trình từng set và từng game trong một trận tennis",
+                "quá trình một trận đấu tennis diễn ra",
+                "Nguyên tắc và luật lệ quy định cho từng giai đoạn trong một trận đấu tennis",
+                "các giai đoạn của trận đấu tennis",
+                "quá trình diễn ra một trận đấu tennis"
+            ],
+            "responses": [
+                "Mỗi trận đấu tennis bao gồm các giai đoạn từng set và từng game, trong đó người chơi phải giành số điểm cần thiết để thắng set và trận đấu. Mỗi game bao gồm nhiều điểm và người chơi cần phải thắng nhiều game để giành chiến thắng."
+            ]
+        },
+        {
+            "tag": "người nhặt bóng trong tennis",
+            "patterns": [
+                "nhặt bóng trong tennis",
+                "các cậu bé nhặt bóng trong tennis",
+                "ballboy trong tennis",
+                "người nhặt bóng",
+                "nhặt bóng tennis"
+            ],
+            "responses": [
+                "Người nhặt bóng trong tennis, thường được gọi là ballboys hoặc ballgirls, là những người trẻ tuổi giúp tay vợt thuận tiện hơn trong việc nhặt và trả bóng. Họ có vai trò quan trọng trong việc duy trì sự liên tục của trận đấu và hỗ trợ các tay vợt."
+            ]
+        }
+    ],
+    "tag": "Luật chơi và các thông tin cơ bản về tennis"
 }

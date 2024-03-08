@@ -19,9 +19,8 @@ class NeuralNetwork1(nn.Module):
         # Lớp output với hàm kích hoạt softmax
         self.layer_output = nn.Linear(64, output_dimension)
         self.activation_softmax = nn.Softmax()
-
         
-
+        # Khởi tạo trọng số ngẫu nhiên
 
     def forward(self, x):
         x = x.float()
@@ -86,7 +85,7 @@ class NeuralNetwork3(nn.Module):
         self.activation_softmax = nn.Softmax()
 
         # Khởi tạo trọng số ngẫu nhiên
-        #self.apply(self._init_weights)
+        
 
 
     def forward(self, x):

@@ -2,14 +2,7 @@ import json
 import numpy as np
 
 #create a rules of reasoning
-rules = [
-    #0,0 -> 0,2; 0,11
-    ([(0,10), (0, 13)] , [(0,7)]),
-    ([(0,0)], [(0,2), (0,11), (0,12)]),
-    ([(0,1)], [(0,5), (0,19)]),
-    ([(0,15)], [(0,22)]),
-    ([(0,15)], [(0,22)])
-]
+from rules import rules
 fact = { (0,0) }
 
 def forward_reasoning(fact, rules):
@@ -34,3 +27,6 @@ def forward_reasoning(fact, rules):
         fact = fact.union(new_fact)
         all_new_fact = all_new_fact.union(new_fact)
     return fact, all_new_fact
+
+if __name__ == "__main__":
+    forward_reasoning(fact, rules)

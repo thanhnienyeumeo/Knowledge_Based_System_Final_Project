@@ -14,7 +14,7 @@ choosed_part = None
 last_intent = None
 json_data = None
 data = None
-fact = set()
+fact = set() #
 model = None
 classes = None
 
@@ -39,7 +39,7 @@ def predict_class(tokenized, model):
     # Filter out predictions below a threshold
     p = bag_of_words(tokenized, words)
     p = torch.from_numpy(p)
-    res = model(p)
+    res = model(p) 
     ERROR_THRESHOLD = 0.25
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     # Sort by strength of probability
@@ -66,7 +66,7 @@ def choose_part():
             return "quit", None, None, None, None, None
         choosed_part = int(inp)
         prefix = 'Data/Data_{}'.format(choosed_part)
-        json_data = open(prefix + "/intents(2).json", encoding= 'utf-8').read()
+        json_data = open(prefix + "/intents.json", encoding= 'utf-8').read()
         data = json.loads(json_data)
         
 
@@ -74,14 +74,14 @@ def choose_part():
         words = np.load(prefix + '/words.npy')
         classes = np.load(prefix + '/classes.npy')
         train_x = np.load(prefix + '/train_x.npy')
-        train_y = np.load(prefix + '/train_y.npy')
-        if choosed_part in [1,4]:
+        train_y = np.load(prefix + '/train_y.npy') #numpy file
+        if choosed_part in range (1,5):
             model = NeuralNetwork1(len(train_x[0]), len(train_y[0]))
         else: 
             model = NeuralNetwork2(len(train_x[0]), len(train_y[0]))
         # load our saved model
         model.load_state_dict(torch.load(prefix + '/model.pth'))
-        print("Bot: Tôi hiểu bạn muốn hỏi về phần {}. Hãy hỏi những câu hỏi bạn cần thắc mắc và tôi sẽ trả lời!".format(data['tag']))
+        print("Bot: Tôi hiểu bạn muốn hỏi về phần {}. Hãy hỏi những câu hỏi bạn cần thắc mắc và tôi sẽ trả lời! Nếu bạn muốn thoát chủ đề, hãy nhập 'quit'".format(data['tag']))
         return choosed_part, model, data, words, classes, json_data
 
 def reply(results, fact):
@@ -93,6 +93,8 @@ def reply(results, fact):
     last_intent = [intent for intent in data['intents'] if intent['tag'] == results[0]['intent']][0]
     answer = last_intent['responses'][0]
     print('Bot: ', answer)
+
+    #suy dien
     index, = np.where(classes == last_intent['tag'])
     #print(index)
     new_data = (choosed_part - 1, index[0])

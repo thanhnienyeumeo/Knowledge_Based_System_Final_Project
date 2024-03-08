@@ -7,22 +7,22 @@ if __name__ == '__main__':
     for i in range(1,5):
         prefix = 'Data/Data_{}'.format(i)
         with open(prefix + '/intents.json', encoding= 'utf-8') as json_data:
+
             intents = json.load(json_data)
-            print(intents)
+            
             words = []
             classes = []
             documents = {}
-            from underthesea import word_tokenize
 
             documents['train'] = []
             documents['test'] = []
             ratio = 0.8
             for intent in intents['intents']:
-                print(intent['patterns'], type(intent['patterns']))
+                
                 lenn = len(intent['patterns'])
                 for i,pattern in enumerate(intent['patterns']):
                     pattern = pattern.lower()
-                    w = word_tokenize(pattern)
+                    w = word_tokenize(pattern) #tach tu
                     
                     words.extend(w)
                     if(i < ratio * lenn):
@@ -32,14 +32,14 @@ if __name__ == '__main__':
                     if intent['tag'] not in classes:
                         classes.append(intent['tag'])
 
-            words = sorted(list(set(words)))
+            words = sorted(list(set(words))) #bo tu dien
 
             print(words, len(words))
             
             print(classes)
             #save words and classes
-            np.save(prefix + '/words.npy', words)
-            np.save(prefix + '/classes.npy', classes)
+            # np.save(prefix + '/words.npy', words)
+            # np.save(prefix + '/classes.npy', classes)
             
             training = []
             testing = []
@@ -75,8 +75,7 @@ if __name__ == '__main__':
 
                 testing.append([bag, output_row])
             random.shuffle(testing)
-        #  print(training)
-        #  print(len(training[0]), len(training[1]))
+        
             training = np.array(training, dtype = object)
             testing = np.array(testing, dtype = object)
             #split training to train and test, according to ratio 75:25
@@ -84,8 +83,8 @@ if __name__ == '__main__':
             # create train and test lists
             train_x = np.array(list(training[:,0]), dtype = float)
             train_y = np.array(list(training[:,1]), dtype = float)
-            np.save(prefix + '/train_x.npy', train_x)
-            np.save(prefix + '/train_y.npy', train_y)
+            # np.save(prefix + '/train_x.npy', train_x)
+            # np.save(prefix + '/train_y.npy', train_y)
             if testing.size == 0:
                 continue
             test_x = np.array(list(testing[:,0]), dtype = float)
@@ -93,5 +92,5 @@ if __name__ == '__main__':
 
             #save train_x and train_y 
             
-            np.save(prefix + '/test_x.npy', test_x)
-            np.save(prefix + '/test_y.npy', test_y)
+            # np.save(prefix + '/test_x.npy', test_x)
+            # np.save(prefix + '/test_y.npy', test_y)

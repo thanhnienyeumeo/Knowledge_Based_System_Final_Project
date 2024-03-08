@@ -1,125 +1,119 @@
-{   "intents":  [
-    {"tag": "Xếp hạng",
-     "patterns": ["Xếp hạng thế giới", 
-                    "Ranking", 
-                    "Điểm số thế giới xếp hạng",
+{
+    "intents": [
+        {
+            "tag": "Xếp hạng",
+            "patterns": [
+                "Xếp hạng thế giới",
+                "Ranking",
+                "Điểm số thế giới xếp hạng",
                 "Danh sách xếp hạng",
                 "Top các tay vợt có xếp hạng cao nhất",
                 "Top các tay vợt có điểm số cao nhất",
                 "Các tay vợt có xếp hạng cao",
                 "Các tay vợt có điểm số cao",
-                "danh sách xếp hạng thế giới"]
-    },
-    {"tag": "Thông tin cá nhân",
-     "patterns": ["Thông tin cá nhân", 
-                    "Thông tin tuyển thủ", 
-                    "Thông tin chung vận động viên", 
-                    "Hồ sơ cá nhân", 
-                    "Thông tin cá nhân tay vợt", 
-                    "Thông tin chung của tay vợt",
-                    "Biết thêm về thông tin người chơi",
-                    "Biết thêm về thông tin tay vợt",
-                    "Tuyển thủ các thông tin cơ bản"]
-    },
-    {"tag": "Thành tích",
-     "patterns": ["Thành tích thi đấu của tuyển thủ",
+                "danh sách xếp hạng thế giới"
+            ],
+            "responses": [
+                "Dưới đây là danh sách xếp hạng các tay vợt: \n  1. Novak Djokovik  \n  2. Carlos Alcaraz \n  3. Danill Medvedved \n  4. jannik Sinner \n  5. Andrey Rublev \n  6. Alexander Zverev \n  7. Holger Rune \n  8. Hubert Hurkacz \n  9. Taylor Fritz \n  10. Casper Ruud"
+            ]
+        },
+        {
+            "tag": "Thông tin cá nhân",
+            "patterns": [
+                "Thông tin cá nhân",
+                "Thông tin tuyển thủ",
+                "Thông tin chung vận động viên",
+                "Hồ sơ cá nhân",
+                "Thông tin cá nhân tay vợt",
+                "Thông tin chung của tay vợt",
+                "Biết thêm về thông tin người chơi",
+                "Biết thêm về thông tin tay vợt",
+                "Tuyển thủ các thông tin cơ bản"
+            ],
+            "responses": [
+                "Roger Federer: \n Quốc tịch: Thụy Sĩ \n Ngày sinh: 8 tháng 8 năm 1981 \n  Chiều cao: 1m85 (6 feet 1 inch) \n Vị trí thi đấu: Tay phải \n Kỷ lục: Đạt số 1 thế giới trong nhiều năm, 20 lần vô địch Grand Slam \n Đặc điểm: Phong cách thi đấu tinh tế, kiểm soát sân và kỹ thuật đa dạng. \n  Serena Williams: \n Quốc tịch: Mỹ \n Ngày sinh: 26 tháng 9 năm 1981 \n Chiều cao: 1m75 (5 feet 9 inches) \n Vị trí thi đấu: Tay phải \n Kỷ lục: 23 lần vô địch Grand Slam, một trong những vận động viên nữ vĩ đại nhất mọi thời đại. \n Đặc điểm: Sức mạnh và tính cách chiến đấu, cùng với kỹ thuật và sự linh hoạt trên sân. \n  Rafael Nadal: \n Quốc tịch: Tây Ban Nha \n Ngày sinh: 3 tháng 6 năm 1986 \n Chiều cao: 1m85 (6 feet 1 inch) \n Vị trí thi đấu: Tay trái \n Kỷ lục: 21 lần vô địch Grand Slam, 13 lần tại Roland Garros. \n Đặc điểm: \"Vua sân đất nện\" với phong cách chơi tấn công và sức mạnh vượt trội. \n  Novak Djokovic: \n Quốc tịch: Serbia \n Ngày sinh: 22 tháng 5 năm 1987 \n Chiều cao: 1m88 (6 feet 2 inches) \n Vị trí thi đấu: Tay phải \n Kỷ lục: 20 lần vô địch Grand Slam, đạt số 1 thế giới nhiều tuần nhất. \n Đặc điểm: Linh hoạt, sức mạnh và tốc độ trên sân đấu. \n  Naomi Osaka: \n Quốc tịch: Nhật Bản \n Ngày sinh: 16 tháng 10 năm 1997 \n Chiều cao: 1m80 (5 feet 11 inches) \n Vị trí thi đấu: Tay phải \n Kỷ lục: 4 lần vô địch Grand Slam, trở thành một trong những tay vợt trẻ triển vọng. \n Đặc điểm: Có sức mạnh và kỹ thuật linh hoạt, được coi là một tương lai sáng cho tennis nữ."
+            ]
+        },
+        {
+            "tag": "Thành tích",
+            "patterns": [
+                "Thành tích thi đấu của tuyển thủ",
                 "Các danh hiệu đã đạt được",
                 "Thành tích vận động viên",
-                "Thành tích thi đấu của tay vợt", 
-                "Các danh hiệu của tay vợt"]
-    },
-    {"tag": "Lịch thi đấu",
-     "patterns": [ "Lịch thi đấu mới nhất",
+                "Thành tích thi đấu của tay vợt",
+                "Các danh hiệu của tay vợt"
+            ],
+            "responses": ["Dưới đây là thành tích một số tay vợt nổi tiếng nhất: \n 1 Roger Federer: \n Số lần vô địch Grand Slam: 20 lần  \n  Được xem là một trong những tay vợt vĩ đại nhất trong lịch sử tennis với những thành tích ấn tượng, gồm 8 lần vô địch Wimbledon và 6 lần vô địch Australian Open  \n  Là tay vợt duy nhất trong lịch sử đạt tới ít nhất 5 danh hiệu ở cả ba giải đấu Grand Slam: Wimbledon, US Open và Australian Open  \n  Đứng đầu bảng xếp hạng ATP trong nhiều năm   \n  2 Rafael Nadal:  \n Số lần vô địch Grand Slam: 21 lần  \n  Là tay vợt duy nhất trong lịch sử đạt tới ít nhất 5 danh hiệu ở cả ba giải đấu Grand Slam: Roland Garros, US Open và Australian Open  \n  3 Novak Djokovic:  \n Số lần vô địch Grand Slam: 20 lần  \n  Đạt số 1 thế giới trong nhiều năm  \n  4 Serena Williams:  \n Số lần vô địch Grand Slam: 23 lần  \n  Một trong những vận động viên nữ vĩ đại nhất mọi thời đại  \n  5 Naomi Osaka:  \n Số lần vô địch Grand Slam: 4 lần  \n  Trở thành một trong những tay vợt trẻ triển vọng"]
+        },
+        {
+            "tag": "Lịch thi đấu",
+            "patterns": [
+                "Lịch thi đấu mới nhất",
                 "Lịch thi đấu sắp tới",
-                    "Lịch trình thi đấu",
+                "Lịch trình thi đấu",
                 "Lịch thi đấu của tuyển thủ",
                 "Lịch đánh giải đấu của tay vợt",
-                "Lịch trình thi đấu sắp tới"]
-    },
-    {"tag": "Kết quả thi đấu",
-     "patterns": [ "Kết quả thi đấu mới nhất",
-     "Lịch thi đấu sắp tới",
-     "Lịch trình thi đấu",
-     "Kết quả thi đấu",
-    "Kết quả gần đây",
-    "Kết quả thi đấu gần đây"]
-
-    },
-    {
-        "tag": "Đánh giá chung",
-        "patterns": [
-            "Đánh giá về tuyển thủ",
-            "Nhận xét tổng quan",
-            "Thông tin đánh giá về vận động viên",
-            "Nhận xét chung cho tay vợt",
-            "Đánh giá chung về tay vợt",
-            "Nhận xét và đánh giá chung",
-            "Ý kiến đánh giá tổng thể"
-        ]
-    },
-    {
-        "tag": "Thông tin về các tuyển thủ nổi tiếng",
-        "patterns": [
-            "Thông tin về các tuyển thủ nổi tiếng",
-            "Thông tin về các tay vợt nổi tiếng",
-            "Thông tin về các tuyển thủ nổi tiếng thế giới",
-            "Thông tin về các tay vợt nổi tiếng thế giới",
-            "Thông tin về các tuyển thủ nổi tiếng thế giới"
-        ],
-        "responses":["Top 10 tay vợt nổi tiếng nhất thế giới hiện tại là: ...."]
-    },
-    {
-        "tag": "Thông tin về các tuyển thủ nổi tiếng ở Việt Nam",
-        "patterns": [
-            "Thông tin về các tuyển thủ nổi tiếng tại Việt Nam",
-            "Thông tin về các tay vợt nổi tiếng tại Việt Nam",
-            "Các tuyển thủ hàng đầu Việt Nam",
-            "Các tay vợt hàng đầu Việt Nam",
-            "Những tay vợt top đầu ở Việt Nam"
-        ],
-        "responses":["Top 10 tay vợt nổi tiếng nhất Việt Nam hiện tại là: ...."]
-    }
-],
-    
-    "Rafael Nadal": [
-    {"tag": "Xếp hạng",
-     "responses": ["Hiện tại theo bảng xếp hạng ATP Nadal đang đứng thứ 663 thế giới. Anh từng đạt xếp hạng cao nhất là top 1 thế giới"]
-    },
-    {"tag": "Thông tin cá nhân",
-     "responses": ["Điểm thì tự đi mà tính "]
-    },
-    {"tag": "Thành tích",
-     "responses": ["vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ. Mặt vợt được căng bằng dây ni lông hoặc dây ruột bò. Ngày nay có nhiều loại dây mới gọi là dây nilông tổng hợp."]
-    },
-    {"tag": "Lịch thi đấu",
-     "responses": ["Bóng cười"]
-    },
-    {"tag": "Kết quả thi đấu",
-     "responses": ["Bóng cười"]
-    },
-    {"tag": "Đánh giá chung",
-     "responses": ["Bóng cười"]
-    }
-],
-    "Unknown": [
-        {"tag": "Xếp hạng",
-         "responses": ["Hiện tại theo bảng xếp hạng ATP Nadal đang đứng thứ 663 thế giới. Anh từng đạt xếp hạng cao nhất là top 1 thế giới"]
+                "Lịch trình thi đấu sắp tới"
+            ],
+            "responses": [
+                "Thông tin về lịch thi đấu mới nhất có thể được cập nhật từ các nguồn tin như trang web chính thức của ATP, WTA, hoặc các giải đấu lớn như Grand Slam (Wimbledon, Roland Garros, US Open, Australian Open). \n Các trang web thể thao uy tín như ESPN hoặc Tennis.com cũng cung cấp thông tin lịch thi đấu chi tiết cho từng giải đấu và từng tay vợt. /n Thông tin lịch trình thi đấu cũng có thể được xem qua các ứng dụng di động của ATP, WTA, hoặc các giải đấu cụ thể."
+            ]
         },
-        {"tag": "Thông tin cá nhân",
-         "responses": ["Điểm thì tự đi mà tính "]
+        {
+            "tag": "Kết quả thi đấu",
+            "patterns": [
+                "Kết quả thi đấu mới nhất",
+                "Lịch thi đấu sắp tới",
+                "Lịch trình thi đấu",
+                "Kết quả thi đấu",
+                "Kết quả gần đây",
+                "Kết quả thi đấu gần đây"
+            ],
+            "responses": [
+                "Thông tin về kết quả thi đấu mới nhất của các tay vợt hàng đầu thế giới sẽ được cập nhật liên tục trên các trang chính thức của giải đấu hoặc các trang web thể thao uy tín như ESPN, ATP World Tour, hoặc trang web chính thức của từng tay vợt."
+            ]
         },
-        {"tag": "Thành tích",
-         "responses": ["vợt có nhiều hình dáng và kích thước khác nhau. Nói chung có 3 cỡ: tiêu chuẩn, cỡ trung, và cỡ lớn. Cỡ vợt được tính theo kích thước của mặt lưới. Ngày xưa vợt được làm bằng gỗ. Ngày nay vợt được làm bằng nhiều chất liệu khác nhau như nhôm, graffit, hoặc sợi carbon. Những chất liệu này làm cho vợt cứng hơn mà nhẹ hơn gỗ. Mặt vợt được căng bằng dây ni lông hoặc dây ruột bò. Ngày nay có nhiều loại dây mới gọi là dây nilông tổng hợp."]
+        {
+            "tag": "Đánh giá chung",
+            "patterns": [
+                "Đánh giá về tuyển thủ",
+                "Nhận xét tổng quan",
+                "Thông tin đánh giá về vận động viên",
+                "Nhận xét chung cho tay vợt",
+                "Đánh giá chung về tay vợt",
+                "Nhận xét và đánh giá chung",
+                "Ý kiến đánh giá tổng thể"
+            ],
+            "responses": [
+                "Đánh giá chung về các tay vợt thường được thể hiện qua thành tích, phong cách chơi, chiến thắng lớn, cũng như ý kiến của các chuyên gia và người hâm mộ. Các tạp chí thể thao uy tín, như Tennis Magazine, và trang web chuyên về tennis như Tennis.com thường đưa ra nhận xét và đánh giá chi tiết về các tay vợt."
+            ]
         },
-        {"tag": "Lịch thi đấu",
-         "responses": ["Bóng cười"]
+        {
+            "tag": "Thông tin về các tuyển thủ nổi tiếng",
+            "patterns": [
+                "Thông tin về các tuyển thủ nổi tiếng",
+                "Thông tin về các tay vợt nổi tiếng",
+                "Thông tin về các tuyển thủ nổi tiếng thế giới",
+                "Thông tin về các tay vợt nổi tiếng thế giới",
+                "Thông tin về các tuyển thủ nổi tiếng thế giới"
+            ],
+            "responses": [
+                "Top 10 tay vợt nổi tiếng nhất thế giới hiện tại thường bao gồm những tên tuổi như Novak Djokovic, Rafael Nadal, Roger Federer, Daniil Medvedev, Alexander Zverev, Dominic Thiem, Stefanos Tsitsipas, Matteo Berrettini, Casper Ruud và Andrey Rublev."
+            ]
         },
-        {"tag": "Kết quả thi đấu",
-        "responses": ["Bóng cười"]
-        },
-        {"tag": "Đánh giá chung",
-         "responses": ["Bóng cười"]
-         }
-],
-"tag": "Thông tin về các tuyển thủ nổi tiếng"
+        {
+            "tag": "Thông tin về các tuyển thủ nổi tiếng ở Việt Nam",
+            "patterns": [
+                "Thông tin về các tuyển thủ nổi tiếng tại Việt Nam",
+                "Thông tin về các tay vợt nổi tiếng tại Việt Nam",
+                "Các tuyển thủ hàng đầu Việt Nam",
+                "Các tay vợt hàng đầu Việt Nam",
+                "Những tay vợt top đầu ở Việt Nam"
+            ],
+            "responses": [
+                "Top 10 tay vợt nổi tiếng nhất ở Việt Nam hiện nay thường gồm các cái tên như Lý Hoàng Nam, Trịnh Linh Giang, Nguyễn Văn Phương, Daniel Cao Nguyễn, Lê Quốc Khánh, Trần Thị Thanh Trúc, Trần Tuấn Anh, Huỳnh Minh Huy, Hoàng Nam Em, và Nguyễn Hoàng Thiên."
+            ]
+        }
+    ],
+    "tag": "Thông tin về các tuyển thủ nổi tiếng"
 }
